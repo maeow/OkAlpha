@@ -276,16 +276,17 @@ p{
         top: 50%;
     }
 }
+
 @keyframes sh2{
     to{
         top: 50%;
-        height: 42vw;
+        height: 35vw;
     }
 }
 
 @keyframes sh3{
     from{
-        height: 60vw;
+        height: 53.5vw;
         top: 50%;
     }
     to{
@@ -294,14 +295,10 @@ p{
         
     }
 }
-.nav-logo{
-    z-index: 900;
-    background-color: white;
-}
 
 @keyframes sh4{
     from{
-        height: 42vw;
+        height: 35vw;
         top: 50%;
     }
     to{
@@ -313,6 +310,10 @@ p{
     position: flex;
     z-index: -1;
 
+}
+.nav-logo{
+    z-index: 900;
+    background-color: white;
 }
 .navbar-show{
     position: absolute;
@@ -779,7 +780,7 @@ p{
     position: relative;
     padding: 0;
     display: none;
-    margin-top: 6%;
+    margin-top: 4%;
     margin-right: 50px;
     font-size: 3vw;
     }
@@ -804,6 +805,9 @@ p{
     #sqr{
        margin-top: 5px;
     }
+    p{
+        margin-top: 1rem;
+    }
 
 }
 
@@ -811,7 +815,6 @@ p{
     position: absolute;
     margin-top: 10%;
     max-width: 4vw;
-    /* z-index: -5; */
     transition: 0.3s;
     display: flex;
 }
