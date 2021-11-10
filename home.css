@@ -1590,43 +1590,124 @@ a, a:hover{
         /* height: 600px; */
     }
     .circle{
-        width: 1200px;
-        height: 1200px;
+        width: 1300px;
+        height: 1300px;
         position: absolute;
         top:-250px;
-        right: -580px;
+        right: -620px;
+    }
+    .section-red-2{
+        padding-top: 100px;
+        height: 1100px;
+        padding-bottom: 100px;
+    }
+    .hello{
+        font-size: 220px;
+    }
+    .address-data{
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .to-email{
+        font-size: 60px;
+        margin-top: 30px;
+    }
+    .email,.address{
+        font-size: 25px;
+
+    }
+    #top-arrow{
+        height: 250px;
+    }
+    .bg_img{
+        padding-bottom: 400px;
     }
 
 }
 @media screen and (min-width: 2000px){
     .wrap_blue{
-        width: 2000px;
-        /* height: 600px; */
+        width: 100%;
+        padding-left: 100px;
+        height: 100%;
+        padding-bottom: 40px;
     }
     .circle{
-        width: 1200px;
-        height: 1200px;
+        width: 1300px;
+        height: 1300px;
         position: absolute;
         top:-250px;
-        right: -580px;
+        right: -620px;
+    }
+    .section-red-2{
+        padding-top: 200px;
+        height: 1200px;
+        padding-bottom: 200px;
     }
     .bg_img{
         padding-bottom: 400px;
+    }
+    #top-arrow{
+        height: 250px;
+    }
+    .hello{
+        font-size: 220px;
+    }
+    .address-data{
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .to-email{
+        font-size: 60px;
+        margin-top: 30px;
+    }
+    .email,.address{
+        font-size: 25px;
+
+    }
+    #top-arrow{
+        height: 250px;
     }
 }
 @media screen and (min-width: 2200px){
     .wrap_blue{
-        width: 2000px;
+        width: 100%;
+        padding-left: 100px;
+        height: 100%;
         /* height: 600px; */
+        padding-bottom: 40px;
+    }
+    .section-red-2{
+        padding-top: 300px;
+        height: 1300px;
+        padding-bottom: 200px;
     }
     .circle{
-        width: 1200px;
-        height: 1200px;
+        width: 1400px;
+        height: 1400px;
         position: absolute;
         top:-220px;
-        right: -580px;
+        right: -660px;
     }
     .bg_img{
         padding-bottom: 400px;
+    }
+    
+    .hello{
+        font-size: 220px;
+    }
+    .address-data{
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .to-email{
+        font-size: 60px;
+        margin-top: 30px;
+    }
+    .email,.address{
+        font-size: 25px;
+
+    }
+    #top-arrow{
+        height: 250px;
     }
 }
