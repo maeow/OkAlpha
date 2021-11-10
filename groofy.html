@@ -1,0 +1,1074 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.scss" rel="stylesheet/scss" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel=icon type=image/png href="5bd5f0255a6dba7040e273d8_favicon.png" />
+    <title>Goofy Bin.</title>
+    <style>
+        @font-face {
+font-family: NHaasGroteskDSPro;
+src: url("/font/NHaasGroteskTXPro-75Bd.otf") format("opentype");
+}
+@font-face {
+font-family: NHaasGroteskDSProl;
+src: url("/font/NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+@font-face {
+    font-family: NHaasGroteskDSPromd;
+    src: url("/font/NHaasGroteskDSPro-65Md.otf") format("opentype");
+}
+@font-face {
+    font-family: NHaasGroteskDSProrg;
+    src: url("/font/NHaasGroteskDSPro-55Rg.otf") format("opentype");
+}
+    #pum{
+            /* margin-top: 22%; */
+            font-size: 150%;
+            font-family: NHaasGroteskDSPro;
+             /* margin-left: -10%; */
+             margin-left: 40%;
+             padding: 5%;
+            width: 200px;
+        }
+        .button {
+             border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        #box{
+          margin-top: 5%;
+      }
+        .button1 {background-color:#ff1f25;}
+
+      #row-in-col2{
+          /* style="margin-top: 3.5%;" */
+          margin-top: 19.5%;
+      }
+      .container-fluid{
+          padding: 7%;
+          padding-top: 0;
+      }
+      
+        /* h1{
+            font-size: 430%;
+            font-family: NHaasGroteskDSPro;
+        } */
+       
+        /* p{
+            font-size: 127%;
+            font-family: NHaasGroteskDSProl;
+        } */
+        h1{
+            font-size: 470%;
+            font-family: NHaasGroteskDSPro;
+        }
+        p{
+            font-size: 175%;
+            font-family: NHaasGroteskDSProl;
+        }
+        #jen{
+            /* style="font-size: 150% ;display: none;" */
+            font-size: 150%;
+            display: none;
+            /* margin-left: 15%; */
+        }
+        /* @media only screen and (max-width: 768px) {
+  .button{
+    
+    float: left;
+  }
+} */
+/* #r99{
+    margin-top: 19%;
+} */
+#pic3{
+    width: 90%;
+    margin-left: 5%;
+}
+#pic1{
+    width: 96%;
+    margin-left: 4%;
+}
+#pic2{
+    width: 96%;
+    margin-left: 2.5%;
+}
+
+/* footer */
+.hello{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+    letter-spacing: -5.5px;
+    font-size: 125px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: NHaasGroteskDSPro;
+}
+.white-line{
+    background-color: black;
+    height: 8px;
+    
+}
+.contact{
+    padding-top: 90px;
+    padding-bottom: 80px;
+    padding-left: 2%;
+}
+.email{
+    margin-top: 2%;
+}
+.email, .address{
+    font-size: 20px;
+    display: block;
+    
+}
+.address-data{
+    font-weight: lighter;
+    line-height: 35px;
+    font-family: NHaasGroteskDSProrg;
+}
+.to-email{
+    font-size: 60px;
+    margin-top: 0;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+    font-family: NHaasGroteskDSPromd;
+    margin-left: 3%;
+}
+.contact-email{
+    line-height: 25px;
+}
+a, a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+.line-hidden{
+    position: absolute;
+    top: 70px;
+    width: 0px;
+    left: 230px;
+    transition: 0.5s;
+}
+.show-email{
+    padding: 0;
+}
+.show-email:hover .line-hidden{
+    width: 460px;
+    left: 0;
+}
+#top-arrow{
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    top: 0;
+    height: 150px;
+    margin-left: -50%;
+    /* แก้ height กับ margin-left */
+}
+.wrap-arrow{
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: -15px;
+}
+.wrap-contact{
+    position: relative;
+}
+.wrap-arrow:hover #top-arrow, a[href='#top']:hover #top-arrow, #top-arrow:hover{
+    top: -50px;
+}
+.white-line-hello{
+    margin-bottom: 40px;
+    z-index: -1;
+}
+h4{
+    font-size: 24px;
+    margin-bottom: -16px;
+}
+h3{
+    font-size: 80px;
+    letter-spacing: -4px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+@media screen and (min-width:1680px) {
+    h3{
+        padding-bottom: 60px;
+        font-size: 110px;
+        margin-top: 0;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .arrow-img{
+        width: 65px;
+    }
+    .arrow{
+        padding-top: 25px;
+    }
+    .email,.address{
+        font-size: 25px;
+    }
+    .address-data{
+        line-height: 47px;
+    }
+    #top-arrow{
+        width: 85px;
+        height: 300px;
+    }
+}
+@media screen and (min-width:2200px) {
+    .circle{
+        width: 2000px;
+        height: 2000px;
+        margin-top: 220px;
+    }
+    h3{
+        font-size: 140px;
+    }
+    .email,.address{
+        font-size: 30px;
+    }
+    #top-arrow{
+        width: 90px;
+        height: 340px;
+    }
+    .contact{
+        padding-bottom: 150px;
+        padding-top: 200px;
+    }
+    .hello{
+        font-size: 200px;
+    }
+    
+}
+@media screen and (max-width: 991px){
+    .show-email:hover .line-hidden{
+        display: none;
+        width: 0px;
+    }
+    .hello{
+        font-size: 90px;
+    }
+    .to-email{
+        font-size: 40px;
+        margin-left: 5%;
+    }
+    .data{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    h3{
+        font-size: 70px;
+        padding-bottom: 20px;
+    }
+    .arrow-img{
+        width: 35px;
+    }
+}
+@media screen and (max-width: 767px){
+    .hello{
+        font-size: 40px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+        margin-top: 10%;
+    }
+    .email,.address{
+        font-size: 16px;
+    }
+    .to-email{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .address-data{
+        font-size: 16px;
+        line-height: 25px;
+        
+    }
+    .contact{
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .wrap-arrow{
+        display: none;
+    }
+    .white-line-hello{
+        margin-bottom: 30px;
+    }
+    .white-line{
+        height: 4px;
+        transition: 0.5s;
+    }
+    h4{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    h3{
+        font-size: 26px;
+        letter-spacing: -1px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .arrow-img{
+        transform: rotate(-90deg);
+        right: 17.5px;
+    }
+    .arrow-img{
+        width: 24px;
+    }
+}
+
+/* เนส */
+@media screen and (min-width:2200px){
+    #row-in-col2{
+        margin-top: 23%;
+    }
+     p{
+        font-size: 200%;
+    } 
+}
+@media screen and (max-width:1919px){
+    #row-in-col2{
+        margin-top: 21%;
+    }
+
+}
+@media only screen and (max-width: 1679px){
+    
+    p{
+        font-size: 18px;
+    }
+    #row-in-col2{
+        margin-top: 0%;
+    }
+
+}
+@media only screen and (max-width: 1024px)  {
+    .first{
+        flex-direction: column;
+    }
+    #pic3{
+        width: 190%;
+    }
+    #pic1{
+        width: 222%;
+        margin-left: -6px;
+    }
+    #pic2{
+        width: 222%;
+        margin-left: 226px;
+    }
+    #col2{
+        width: 100%;
+        max-width: 100%;
+    }
+    #col2{
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    #row-in-col2{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 992px) {
+#pic1{
+        width: 108%;
+        /* margin-left: 3%; */
+        margin-left: -7%;
+}
+#pic2{
+    width: 108%;
+    
+    margin-left: 1.5%;
+}
+#col2{
+           margin-top: 5%;
+           
+       }
+       #box{
+           margin-top: 0;
+       }
+       #row-in-col2{
+           margin-top: 5%;
+       }
+       /* #pum{
+           margin-left: 50%;
+       } */
+       #pic3{
+           width: 100%;
+           margin-left: 0;
+       }
+       .container-fluid{
+           padding: 10%;
+       }
+       .to-email{
+           margin-left: 5%;
+       }
+       
+}
+
+
+@media only screen and (max-width: 767px) {
+        #mew{
+    
+            display: none;
+        }
+        h1{
+            font-size: 250%;
+
+        }
+        #jen{
+            display: block;
+
+        }
+        p{
+            font-size: 115%;
+        }
+       #pic1{
+           margin-left: -0.5%;
+           width: 100%;
+       }
+       #pic2{
+           width: 100%;
+           margin-left: -0.5%;
+       }
+       #col2{
+           margin-top: 5%;
+           margin-left: 2%;
+       }
+       #row-in-col2{
+           margin-top: 5%;
+       }
+       #r99{
+           margin-top: 0;
+       }
+       .container-fluid{
+           padding:10% ;
+       }
+       #pic3{
+           width: 91%;
+           margin-left: 4%;
+       }
+       .to-email{
+           margin-left: 7%;
+       }
+}
+
+/*  */
+
+
+
+/* navbar */
+
+body{
+height: 100%;
+position: relative;
+color:black;
+min-height: 100%;
+/* max-width: 1980px; */
+overflow-x: hidden;
+/* overflow-y: hidden; */
+background-color: rgb(255, 255, 255);
+}
+#con{
+    padding-top:20px;
+    padding-bottom: 100px;
+} 
+a{
+font-family: NHaasGroteskDSProl;
+font-weight: 500;
+color:black;
+}
+.navbody{
+position: flex;
+background-color: rgb(255, 255, 255);
+width: 99%;
+/* z-index: 900; */
+margin: -0.5%;
+}
+.nav-link:hover{
+color: #005cef;
+transition: 0.25s;
+}
+.nav{
+position: relative;
+}
+.navbar-brand{
+position: flex;
+z-index: -1;
+}
+.nav-logo {
+padding-top: 43px;
+padding-bottom: 40px;
+z-index: 900;
+position: relative;
+background-color: white;
+}
+.navbar{
+/* position: relative; */
+/* z-index: 900; */
+background-color: #ffffff;
+float:right;
+display: block;
+}
+div {
+display: block;
+}
+a{
+font-family: NHaasGroteskDSProl;
+font-weight: 500;
+color:black;
+}
+.navbar-collapse{
+visibility: hidden;
+position: absolute;
+float:left;
+display: block;
+margin-left: -12%;
+transition: 0.5s ease-in;
+width: 125%;
+height: 0;
+/* z-index: 100; */
+padding: 3vw;
+background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav{
+/* z-index: 900; */
+display: -webkit-inline-box;
+}
+
+.nav-item1 {
+position: relative;
+float:right;
+display: -webkit-inline-box;
+margin-top: 8%;
+margin-right: 45px;
+margin-left: -2%;
+font-size: 22px;
+width: 20%;
+}
+
+.nav-item {
+position: relative;
+display: none;
+margin-top: 8%;
+font-size: 20px;
+
+}
+.active{
+color: #005cef;
+}
+.navbar-toggler{
+display:none;
+}
+
+*:focus {
+outline: 0 !important;
+}
+.navbar-show{
+position: absolute;
+top: -5%;
+z-index: -1;
+display:none;
+background-color: #ffffff;
+width: 125%;
+}
+#navbarNav{
+    z-index: 100;
+} 
+.wrapper {
+position: relative;
+/* z-index: 100; */
+width: 84%;
+max-width: 1980px;
+margin-right: auto;
+margin-left: auto;
+}
+#one{
+    position: relative; 
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+}
+#two{
+    margin-left: -20px;
+    position: absolute;
+    transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.nav-item1 {
+position: relative;
+float:right;
+display: -webkit-inline-box;
+margin-top: 8%;
+margin-right: 45px;
+margin-left: -2%;
+font-size: 22px;
+width: 20%;
+}
+.nav-item {
+visibility: visible;
+position: relative;
+padding: 1%;
+margin-left: 0%;
+display: none;
+margin-top: 5%;
+margin-right: 50px;
+font-size: 4vw;
+}
+#line{
+position: absolute;
+color: black;
+background-color: black;
+height:5px;
+width: 120%;
+float: left;
+margin-top: 0%;
+margin-left: -110px;
+/* z-index: 900; */
+}
+
+@media screen and (max-width:990px) {
+body{
+    max-width: 990px;
+}
+.navbar-show{
+    height: 0vw;
+}
+.w-container {
+margin-left: auto;
+margin-right: auto;
+max-width: 940px;
+} 
+.navbar-nav{
+display: block;
+z-index: 900;
+}
+.nav-item1 {
+position: relative;
+display: none;
+margin-top: 8%;
+margin-right: 50px;
+font-size: 25px;
+}
+.nav-item {
+visibility: visible;
+position: relative;
+padding: 1%;
+margin-left: 0%;
+display: none;
+margin-top: 5%;
+margin-right: 50px;
+font-size: 4vw;
+}
+#three{
+    margin-top: 1%;
+}
+.navbar-toggler{
+    margin-top: 50px;
+    display: block;
+    float: right;
+}
+.title{
+    margin-top: 5%;
+    font-size: 10vw;
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 20px;
+    font-family: NHaasGroteskDSPro;
+    z-index: -5;
+}
+#line{
+    z-index: 900;
+    margin-top: -1%;
+}
+.navbar-collapse{
+    z-index: 100;
+    visibility: visible;
+} 
+#navbarNav{
+    z-index: 100;
+} 
+.blue{
+    margin-top: 36%;
+    padding: 3rem;
+    padding-left: 2%;
+    
+}
+.title2{
+    font-size: 6rem;
+    margin-bottom: 5%;
+}
+#ww{
+    /* padding-left: 3%;
+    padding-right: 3%; */
+}
+/* h3{
+    padding-bottom: 50px;
+    font-size: 5rem;
+    margin-top: 5px;
+}
+h4{
+    letter-spacing: 1px;
+    font-size: 20px;
+} */
+body{
+    overflow-x: hidden;
+}
+}
+@media screen and (max-width:767px) {
+body{
+    overflow-x: hidden;
+}
+.navbar-show{
+    margin-top: -2%;
+    height: 0vw;
+}
+.blue{
+    margin-top: 20%;
+    padding: 3rem;
+    padding-left: 2%;
+    
+}
+.detail-w{
+    font-size: 1.5rem;
+    letter-spacing: 0;
+}
+/* p{
+    margin-top: 5%;
+} */
+.nav-item {
+position: relative;
+padding: 0;
+display: none;
+margin-top: 4%;
+margin-right: 50px;
+font-size: 3vw;
+}
+#ww{
+   text-align: left;
+}
+.title2{
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: -5%;
+}
+/* h3{
+    padding-bottom: 0px;
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+h4{
+    margin-top: 5%;
+    letter-spacing: 1px;
+    font-size: 1rem;
+} */
+#sqr{
+   margin-top: 5px;
+}
+p{
+    margin-top: 1rem;
+}
+
+}
+
+
+#arrow{
+position: absolute;
+margin-top: 10%;
+max-width: 4vw;
+transition: 0.3s;
+display: flex;
+}
+#arrow:hover{
+cursor: pointer;
+transform: translateY(25%);;
+}
+
+.white{
+    padding: 0.5%;
+    padding-bottom: 8%;
+    position:relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.data-wrap{
+width: 80%;
+
+}
+@media screen and (min-width: 992px) {
+#navbarNav , .navbar-show{
+    display: none;
+}
+.nav-item{
+    display: none;
+}
+
+}
+
+@keyframes sh1{
+to{
+    height: 53.5vw;
+    top: 120%;
+}
+}
+
+@keyframes sh2{
+to{
+    top: 120%;
+    height: 35vw;
+}
+}
+
+@keyframes sh3{
+from{
+    height: 53.5vw;
+    top: 100%;
+}
+to{
+    height: 0vw;
+    top: -110%;
+    
+}
+}
+
+@keyframes sh4{
+from{
+    height: 35vw;
+    top: 120%;
+}
+to{
+    top: -50%;
+    height: 0vw;
+}
+}
+@media screen and (max-width: 478px){
+    #con{
+        padding-bottom: 20px;
+    }
+    #line{
+        width: 110%;
+        margin-left: -16px;
+    }
+    #navbarNav{
+        margin-left: -16px;
+    }
+}
+/*  */
+    </style>
+   
+</head>
+<body>
+    <div class="container-fluid" id="con">
+        <div class="nav w-nav">
+            <div class="wrapper w-container">
+                <div class="navbody">
+                    <a class="navbar-brand" href="#"><img class="nav-logo"src="pic/logo-okalpha.svg" alt="" class="nav-logo"></a>
+                    <button class="navbar-toggler" id="toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" onclick=pic() aria-label="Toggle navigation">
+                        <img id="one" src="pic/icon-menu.svg" width="28" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86d" alt="" class="nav-icon">
+                        <img id="two" src="pic/icon-close.svg" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86e" alt="" class="nav-icon-close">
+                    </button>
+
+                    <div class="navbar">
+                        <div class="navbar-nav">
+                            <a class="nav-item1 nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item1 nav-link" href="#">Work</a>
+                            <a class="nav-item1 nav-link active" href="#">Shop</a>
+                            <a class="nav-item1 nav-link" href="#">Contact</a>
+                         </div>
+                    </div>
+
+                    <hr id="line">
+                    <div class="navbar-show"id="navbarNav">
+                        <div class="navbar-nav">
+                            <a id="three" class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                            <a id="four" class="nav-item nav-link" href="#">Work</a>
+                            <a id="five" class="nav-item nav-link active" href="#">Shop</a>
+                            <a id="six" class="nav-item nav-link" href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class='row first' >
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="col1">
+                <div class="row">
+                    <img src="/picnest/goofy1.jpg"   id="pic3">
+                </div>
+                <div class="row" style="margin-top: 2%; margin-left: -0.5%;">
+                    <div class="col-6">
+                        <img src="/picnest/goofy2.jpeg" id="pic1">
+                    </div>
+                    <div class="col-6" style="margin-left: -2.5%;">
+                        <img src="/picnest/goofy3.jpeg" id="pic2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12  col-sm-12 col-md-12 col-lg-6 col-xl-6"  id="col2">
+                <h1 id="word">Goofy Bin.</h1><br>
+                <p id="box">We don't really want to sell this 1980s bin, because it's damn near perfect. But, we have too much stuff at the studio. Also, who doesn't need a bin? Why not make it something with a soul.</p><br>
+                <p>Weight: 420g<br>Dimensions: 230mm x 230mm x 265mm<br>Shipping: South Africa<br><a href="" style="text-decoration:none;color: #0d82f2;">Contact us for international rates</a></p>
+                
+                <div class="row" id="row-in-col2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <h1  id="r99" ><span style="position: relative;">R289</span></h1>
+                        <button class='button button1'  id="jen">Add to cart</button>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="mew">
+                        <button class='button button1' id="pum">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="contact">
+            <div class="wrap-contact">
+                <div class="row contact-head">
+                    <div class="col-12">
+                        <h1 class="hello">Say Hello.</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-12 white-line white-line-hello"></div>
+                    </div>
+                </div>
+                <div class="row contact-email">
+                    <div class="col-12">
+                        <h7 class="email"><b>Email:</b></h7>
+                    </div>
+                    <div class="col-4 show-email">
+                        <a href="mailto:info@okalpha.co"><h3 class="to-email" >info@okalpha.co</h3></a>
+                        <div class="white-line line-hidden" ></div>
+                    </div>
+                </div>
+                <div class="row contact-address">
+                    <div class="col-12">
+                        <h7 class="address"><b>Address:</b></h7>
+                        <h7 class="address address-data">Unit 10, The Royal <br>4 Queens Park Ave <br>Salt River <br>Cape Town <br>South Africa <br>7925</h7>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="wrap-arrow" id="wrap-arrow">
+                        <a href="#top"><img id="top-arrow" src="5beb3929b5b68a8622f80edf_arrow-black.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        $("a[href='#top']", "#wrap-arrow").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 1500, "swing");
+    return false;
+  });
+    </script>
+    <script>
+        let show = document.getElementById("navbarNav");
+        
+        var x = window.matchMedia("only screen and (max-width: 990px)");
+        var y = window.matchMedia("only screen and (max-width: 767px)");
+        var z = window.matchMedia("only screen and (min-width: 990px)");
+    
+    
+        i = true;
+        function pic(){
+            if (i == true) {
+                if ($(window).width() < 990) {
+                          document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                          document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                        //   show.style = "display : block;";
+                        setTimeout(function(){show.style.display = 'block'; }, 320);
+                          setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 200);
+                          setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 200);
+                          setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 200);
+                          setTimeout(function(){document.getElementById('six').style.display = 'block'; }, 200);
+                         show.style.animation = "sh1 0.5s forwards";
+                         $("button").attr("aria-expanded","true");
+                        i = false;
+                }
+                 if ($(window).width() < 767) {
+                          document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                          document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                          show.style = "display : block;";
+                          setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 200);
+                          setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 200);
+                          setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 200);
+                          setTimeout(function(){document.getElementById('six').style.display = 'block'; }, 200);
+                         show.style.animation = "sh2 0.5s forwards";
+                         $("button").attr("aria-expanded","true");
+                        i = false;
+                }
+            }
+            else if (i == false) {
+                if ($(window).width() < 990) {
+                        document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                        document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                        show.style.animation = "sh3 0.5s forwards";
+                        $("button").attr("aria-expanded","false");
+                        setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 200);
+                        setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 200);
+                        setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 200);
+                        setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 200);
+                        i = true;
+                }
+                 if ($(window).width() < 767) {
+                        document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                        document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                        show.style.animation = "sh4 0.5s forwards";
+                        $("button").attr("aria-expanded","false");
+                        setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 200);
+                        setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 200);
+                        setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 200);
+                        setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 100);
+                        i = true;
+                }
+                }
+            
+            }
+        
+        function resize() {
+        if ($(window).width() > 990) {
+                    show.style = "display : none;";
+                    $("button").attr("aria-expanded","false");
+                    document.getElementById('three').style.display = 'none';
+                    document.getElementById('four').style.display = 'none';
+                    document.getElementById('five').style.display = 'none';
+                    document.getElementById('six').style.display = 'none';
+                    i= false;
+            }
+            if ($(window).width() < 990) {
+                        document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                        document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                        show.style.animation = "sh3 0.5s forwards";
+                        $("button").attr("aria-expanded","false");
+                        setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 40);
+                        setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 80);
+                        setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 160);
+                        setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 240);
+                        i = true;
+                     }
+        }
+        $(window).on("resize", resize);
+            resize();
+    </script>
+    
+</body>
+</html>
