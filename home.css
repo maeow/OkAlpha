@@ -527,18 +527,7 @@ p{
     .data-project{
         font-size: 25px;
     }
-    .more-project{
-        font-family: NHaasGroteskDSProwow;
-        background-color: #ffdd18;
-        border: none;
-        padding: 20px;
-        width: 200px;
-        font-size: 20px;
-        /* font-weight: 500; */
-        float: left;
-        transition: 0.2s;
-        /* z-index: 100; */
-    }
+
     @keyframes showmore{
         to{
             height: 600px;
@@ -656,18 +645,7 @@ p{
     .data-project{
         font-size: 15px;
     }
-    .more-project{
-        font-family: NHaasGroteskDSProwow;
-        background-color: #ffdd18;
-        border: none;
-        padding: 20px;
-        width: 200px;
-        font-size: 20px;
-        /* font-weight: 500; */
-        float: left;
-        transition: 0.2s;
-        /* z-index: 100; */
-    }
+
 
     @keyframes showmore{
         to{
