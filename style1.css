@@ -1,0 +1,862 @@
+body{
+    /* margin: 5%; */
+
+}
+
+@font-face {
+font-family: NHaasGroteskDSPro;
+src: url("/font/NHaasGroteskTXPro-75Bd.otf") format("opentype");
+}
+@font-face {
+font-family: NHaasGroteskDSProl;
+src: url("/font/NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+@font-face {
+    font-family: NHaasGroteskDSPromd;
+    src: url("/font/NHaasGroteskDSPro-65Md.otf") format("opentype");
+}
+@font-face {
+    font-family: NHaasGroteskDSProrg;
+    src: url("/font/NHaasGroteskDSPro-55Rg.otf") format("opentype");
+}
+.container-fluid{
+/* margin-left: 8%; */
+padding: 90px;
+padding-left: 100px;
+}
+#first{
+    padding-top: 0;
+    padding-left:150px;
+    padding-right: 150px;
+}
+/* pointer light, vintage train, kids Scrabble, sundae trays ใช้ pin นำในคลาส */
+.pin{
+background-image: url("/picnest/pin1.jpg");
+background-color:#cccccc;
+height: 342px;
+width: 100%;
+
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+position: relative;
+margin-bottom: 15px;
+/* transition: 5s ease-out; */
+}
+@keyframes yor {
+/* from {background-size: 125% ;}   ครั้งที่2from {background-size: 130% ;}
+to {background-size: 110%  ;} คร้งที่2 to {background-size: 115%  ;} */
+from {background-size: 130% 110%;}
+to {background-size: 120% 100%  ;} 
+}
+@keyframes kayay {
+/* from {background-size: 110% ;}
+to {background-size: 125%  ;} */
+from {background-size:120% 100% ;}
+to {background-size:  130% 110%   ;} 
+}
+.pin:not( :hover ){ 
+animation-name: yor;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.pin:hover{
+/* animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+transition: 5s;
+transform: scale(1);
+animation-direction: alternate;
+background-size: 125%;  */
+animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+.text {
+/* text-align: center; */
+position: absolute;
+top: 80%;
+left: 65%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.text1 {
+/* text-align: center; */
+position: absolute;
+top: 82%;
+margin-left: 5%;
+/* transform: translate(-50%, -50%); */
+color: white;
+}
+.text2 {
+/* text-align: center; */
+position: absolute;
+top: 80%;
+left: 65%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.text3 {
+/* text-align: center; */
+position: absolute;
+top: 85%;
+left: 65%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.text4 {
+/* text-align: center; */
+position: absolute;
+top: 80%;
+left: 65%;
+transform: translate(-50%, -50%);
+color: white;
+}
+/* groofy */
+.goofy{
+background-image: url("/picnest/goofy1.jpg");
+background-color: burlywood;
+/* height: 215;  */
+height: 342;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-bottom: 15px;
+/* background-color: #cccccc;
+height: 200;
+width: 260;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative; */  
+/* อันนี้จากpin เอาไปใส่ใน retro gridlock ได้ */
+}
+.goofy:not( :hover ){ 
+animation-name: yor;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.goofy:hover{
+animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+/* piet pencils */
+@keyframes yor1 {
+
+from {background-size: 200% 120%;}
+to {background-size: 190% 110% ;} 
+}
+@keyframes kayay1 {
+
+from {background-size: 190% 110%;}
+to {background-size: 200% 120% ;} 
+}
+.piet{
+background-image: url("/picnest/piet1.jpg");
+background-color: #cccccc;
+height: 700;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-left: 2.5%;
+margin-bottom: 4%;
+}
+.piet:not( :hover ){ 
+animation-name: yor4;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.piet:hover{
+animation-name: kayay4;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+/* retro jug */
+.retro{
+background-image: url("/picnest/retro_jug1.jpg");
+/* height: 200; height: 215;
+width: 270;  width: 280;*/
+
+height: 342;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-bottom: 15px;
+margin-right: 15px;
+margin-left: 6px;
+}
+.retro:not( :hover ){ 
+animation-name: yor;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.retro:hover{
+animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+/* gridlock */
+.gridlock{
+background-image: url("/picnest/grid1.jpg");
+/* margin-bottom: 0;
+height: 200;
+width: 270; */
+height: 342;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-right: 15px;
+margin-left: 6px;
+}
+.gridlock:not( :hover ){ 
+animation-name: yor;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.gridlock:hover{
+animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+/* movie viewer */
+@keyframes yor2 {
+
+from {background-size: 110% 120% ;}
+to {background-size: 100% 110%  ;} 
+}
+@keyframes kayay2 {
+
+from {background-size: 100% 110%  ;}
+to {background-size: 110% 120% ;} 
+}
+.movie {
+background-image: url("/picnest/movie1.jpg");
+background-color: #cccccc;
+/* height: 425; */
+height: 700px;
+width: 109%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.movie:not( :hover ){ 
+animation-name: yor;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.movie:hover{
+animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+/* thermo mug */
+@keyframes yor3 {
+
+from {background-size: 150% 130% ;}
+to {background-size: 140% 120%  ;} 
+}
+@keyframes kayay3 {
+
+from {background-size: 140% 120% ;}
+to {background-size: 150% 130% ;} 
+}
+.thermo{ 
+background-image: url("/picnest/thermo1.jpg");
+background-color: #cccccc;
+height: 342;
+/* width: 213; */
+width: 90%;
+background-position: 50%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-left: 12.5%;
+margin-bottom: 18px;
+
+}
+
+.thermo:not( :hover ){ 
+animation-name: yor3;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.thermo:hover{
+animation-name: kayay3;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+/* reteo watch */
+.retro-watch{
+background-image: url("/picnest/watch1.jpg");
+
+}
+
+/* noise maker */
+.noise{
+background-image: url("/picnest/noise1.jpg");
+height: 342;
+width: 110%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-bottom: 18px;
+margin-right: 15px;
+margin-left: 6px;
+/* styleแบบpin */
+}
+.noise:not( :hover ){ 
+animation-name: yor;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.noise:hover{
+animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+/* jug and cups*/
+.jug{
+background-image: url("/picnest/jug1.jpg");
+height: 342;
+width: 110%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-right: 15px;
+margin-left: 6px;
+/* styleแบบpin */
+}
+.jug:not( :hover ){ 
+animation-name: yor;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.jug:hover{
+animation-name: kayay;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.pointer{
+
+background-image: url("/picnest/pointer1.jpg") ;
+}
+.sundae{
+background-image: url("/picnest/sun1.jpg");
+
+}
+/* view master */
+.viewmaster{
+background-image: url("/picnest/view1.jpg");
+background-color: #cccccc;
+height: 700;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-left: 2.5%;
+margin-right: 15px;
+}
+.viewmaster:not( :hover ){ 
+animation-name: yor4;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.viewmaster:hover{
+animation-name: kayay4;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+/*  */
+.vintage{
+background-image: url("/picnest/vin1.jpg");
+margin-right: 15px;
+margin-left: 6px;
+}
+.kids{
+background-image: url("/picnest/kid1.jpg");
+margin-right: 15px;
+margin-left: 6px;
+}
+/* toys Maker */
+.toys{
+background-image: url("/picnest/toy1.jpg");
+height: 490;
+width: 110%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+}
+@keyframes yor4 {
+
+from {background-size: 170% 110%;}
+to {background-size:  160% 100% ;} 
+}
+@keyframes kayay4 {
+
+from {background-size: 160% 100% ;}
+to {background-size: 170% 110% ;} 
+}
+.toys:not( :hover ){ 
+animation-name: yor1;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.toys:hover{
+animation-name: kayay1;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+/* olympic mug */
+.olympic{
+background-image: url("/picnest/oly1.jpg");
+height: 490;
+width: 110%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-right: 15px;
+margin-left: 6px;
+}
+.olympic:not( :hover ){ 
+animation-name: yor1;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.olympic:hover{
+animation-name: kayay1;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+/* PIFCO clock */
+.pifco{
+background-image: url("/picnest/pifco1.jpg");
+background-color: #cccccc;
+height: 490;
+width: 100%;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-left: 2.5%;
+}
+.pifco:not( :hover ){ 
+animation-name: yor2;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+.pifco:hover{
+animation-name: kayay2;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+h3{
+    font-family: NHaasGroteskDSPro;
+    font-size: 220%;
+}
+h4{
+    font-family: NHaasGroteskDSProl;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+/* footer */
+.hello{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+    letter-spacing: -5.5px;
+    font-size: 160px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: NHaasGroteskDSPro;
+}
+.white-line{
+    background-color: black;
+    height: 8px;
+    
+}
+.contact{
+    /* padding-top: 90px; */
+    /* padding-bottom: 80px; */
+    
+    padding: 125px;
+}
+.email{
+    margin-top: 2%;
+}
+.email, .address{
+    font-size: 20px;
+    display: block;
+    
+}
+.address-data{
+    font-weight: lighter;
+    line-height: 35px;
+    font-family: NHaasGroteskDSProrg;
+    
+}
+.to-email{
+    font-size: 60px;
+    margin-top: 0;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+    font-family: NHaasGroteskDSPromd;
+    margin-left: 3%;
+}
+.contact-email{
+    line-height: 25px;
+}
+a, a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+.line-hidden{
+    position: absolute;
+    top: 70px;
+    width: 0px;
+    left: 235px;
+    margin-left: 3%;
+    transition: 0.5s;
+}
+.show-email{
+    padding: 0;
+}
+.show-email:hover .line-hidden{
+    width: 455px;
+    left: 0;
+}
+#top-arrow{
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    top: 0;
+    height: 150px;
+    margin-left: -50%;
+    /* แก้ height กับ margin-left */
+}
+.wrap-arrow{
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: -15px;
+}
+.wrap-contact{
+    position: relative;
+}
+.wrap-arrow:hover #top-arrow, a[href='#top']:hover #top-arrow, #top-arrow:hover{
+    top: -50px;
+}
+.white-line-hello{
+    margin-bottom: 40px;
+    z-index: -1;
+}
+#h4{
+    font-size: 24px;
+    margin-bottom: -16px;
+}
+#h3{
+    font-size: 60px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+    /* margin-top: 20px; */
+    margin-bottom: 30px;
+}
+@media screen and (min-width:1680px) {
+    #h3{
+        padding-bottom: 60px;
+        /* font-size: 110px; */
+        margin-top: 0;
+    }
+    #h4{
+        font-size: 30px;
+    }
+    .arrow-img{
+        width: 65px;
+    }
+    .arrow{
+        padding-top: 25px;
+    }
+    .email,.address{
+        font-size: 25px;
+    }
+    .address-data{
+        line-height: 47px;
+    }
+    #top-arrow{
+        width: 85px;
+        height: 300px;
+    }
+    /* เพิ่ม contact */
+    .contact{
+        margin-top: -5%;
+    }
+}
+@media screen and (min-width:2200px) {
+    .circle{
+        width: 2000px;
+        height: 2000px;
+        margin-top: 220px;
+    }
+    /* #h3{
+        font-size: 140px;
+    } */
+    .email,.address{
+        font-size: 20px;
+    }
+    #top-arrow{
+        width: 90px;
+        height: 340px;
+    }
+    .contact{
+        padding-bottom: 200px;
+        padding-top: 250px;
+    }
+}
+@media screen and (max-width: 991px){
+    .show-email:hover .line-hidden{
+        display: none;
+        width: 0px;
+    }
+    .hello{
+        font-size: 90px;
+    }
+    .to-email{
+        font-size: 40px;
+        margin-left: 15px;
+    }
+    .data{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #h3{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .arrow-img{
+        width: 35px;
+    }
+    .contact{
+        padding-top: 40px;
+        padding-left: 70px;
+    }
+}
+@media screen and (max-width: 767px){
+    .hello{
+        font-size: 40px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+        margin-top: 10%;
+    }
+    .email,.address{
+        font-size: 16px;
+    }
+    .to-email{
+        font-size: 30px;
+        margin-bottom: 30px;
+        padding-left: 5px;
+    }
+    .address-data{
+        font-size: 16px;
+        line-height: 25px;
+        
+    }
+    .contact{
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .wrap-arrow{
+        display: none;
+    }
+    .white-line-hello{
+        margin-bottom: 30px;
+    }
+    .white-line{
+        height: 4px;
+        transition: 0.5s;
+    }
+    #h4{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    #h3{
+        font-size: 30px;
+        letter-spacing: -1px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .arrow-img{
+        transform: rotate(-90deg);
+        right: 17.5px;
+    }
+    .arrow-img{
+        width: 24px;
+    }
+    .contact{
+        
+        padding-left: 70px;
+    }
+
+}
+
+/* จบ footer */
+
+
+
+.col-3 {
+margin-right: 2%;
+}
+.col-3 div{
+width: 115%;
+}
+/* .col-3.thermo,.col-3.retro-watch{
+width: ;
+} */
+
+.pic2{
+    
+background-color:#cccccc;
+height: 250px;
+width:  101%;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-bottom: 15px;
+/* transition: 5s ease-out; */
+}
+
+
+.text5 {
+/* text-align:inherit; */
+position: absolute;
+top: 60%;
+/* left: 25%; */
+margin-left: 10%;
+/* transform: translate(-50%, -50%); */
+color: white;
+box-sizing: border-box;
+}
+
+#seconds{
+padding-left: 90px;
+padding-right: 90px;
+padding-top: 0px ;
+display: none;
+}
+.pic3{
+    
+    background-color:#cccccc;
+    height: 220px;
+    width:  100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 15px;
+    
+    /* transition: 5s ease-out; */
+
+}
+#third{
+    padding: 7%;
+    display: none;
+}
+@media only screen and (max-width: 1680px){
+    .contact{
+        margin-top: -50px;
+    }
+    
+}
+@media only screen and (max-width: 991px){
+#first{
+    display: none;
+}
+#seconds{
+    display: block;
+}
+
+}
+@media only screen and (max-width: 767px){
+.pic2{
+    height: 180px;
+}
+#seconds{
+    display: block;
+}
+.text5{
+    top: 50%;
+}
+
+}
+@media only screen and (max-width: 479px){
+#first{
+    display: none;
+    }
+#seconds{
+    display: none;
+    }
+#third{
+    display: block;
+    }
+.text5{
+    top: 65%;
+    margin-left: 5%;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .to-email{
+        margin-left: 8px;
+        
+    }
+}
