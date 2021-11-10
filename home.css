@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @font-face {
     font-family: NHaasGroteskDSPro;
-    src: url("NHaasGroteskTXPro-75Bd.otf") format("opentype");
+    src: url("font/NHaasGroteskTXPro-75Bd.otf") format("opentype");
 }
 @font-face {
     font-family: NHaasGroteskDSProl;
-    src: url("NHaasGroteskTXPro-55Rg.otf") format("opentype");
+    src: url("font/NHaasGroteskTXPro-55Rg.otf") format("opentype");
 }
 @font-face {
     font-family: NHaasGroteskDSProdetail;
-    src: url("NHaasGroteskTXPro-55Rg.otf") format("opentype");
+    src: url("font/NHaasGroteskTXPro-55Rg.otf") format("opentype");
 }
 @font-face {
     font-family: NHaasGroteskDSProwow;
-    src: url("NHaasGroteskDSPro-65Md.otf") format("opentype");
+    src: url("font/NHaasGroteskDSPro-65Md.otf") format("opentype");
 }
 .scrollbar-hidden::-webkit-scrollbar{
     display: none;
