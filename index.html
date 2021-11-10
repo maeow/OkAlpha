@@ -22,8 +22,8 @@
                 <div class="navbody">
                     <a class="navbar-brand" href="#"><img class="nav-logo"src="pic/logo-okalpha.svg" alt="" class="nav-logo"></a>
                     <button class="navbar-toggler" id="toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" onclick=pic() aria-label="Toggle navigation">
-                        <img id="one" src="pic/https://uploads-ssl.webflow.com/5b13df51d0d5fe8211f203da/5b13ec2c541a846f4d141dd0_icon-menu.svg" width="28" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86d" alt="" class="nav-icon">
-                        <img id="two" src="pic/https://uploads-ssl.webflow.com/5b13df51d0d5fe8211f203da/5b13ef75541a841daa141eec_icon-close.svg" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86e" alt="" class="nav-icon-close">
+                        <img id="one" src="pic/icon-menu.svg" width="28" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86d" alt="" class="nav-icon">
+                        <img id="two" src="pic/icon-close.svg" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86e" alt="" class="nav-icon-close">
                     </button>
 
                     <div class="navbar">
@@ -36,7 +36,6 @@
                     </div>
 
                     <hr id="line">
-                    <!-- <div class="hr"></div> -->
                     <div class="navbar-show"id="navbarNav">
                         <div class="navbar-nav">
                             <a id="three" class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -46,11 +45,13 @@
                         </div>
                     </div>
                 </div>
-                <section id="title">
+                <section id="title" >
                     <img id="sqr" src="pic/db_square.svg">
+                    <div class="k">
                     <h1 class="title" id="title1">Hey.</h1>
                     <br>
                     <h1 class="title" id="title2">We’re ok.</h1>
+                    </div>
                     <div class="ll">
                         <a href="#detail" id="eiei">
                             <img id="arrow" src="pic/arrow-blue-long.svg">
@@ -60,8 +61,9 @@
             </div>
         </div>
     </div>
+    
     <section class="blue" id="detail">
-            <div class="wrapper">
+            <div class="wrapper" id="well">
              <h1 class="detail-w" ><span style="color:#003286;">Who we are.</span> Okalpha is a concept and detail-focused animation studio based in the middle of nowhere.</h1>
             <p >After a small lifetime in advertising, we loathe mediocrity and pine for the pretty. We’re proud of keeping things simple: conceptualise engaging ideas and execute them beautifully. If you’d like something to move, we’d love to help with that. If you don’t, we’d love for you to follow us on our small journey through the galaxy and into a pile of intriguing work.</p>
             </div>
@@ -259,10 +261,10 @@
                         document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                         show.style.animation = "sh3 0.5s forwards";
                         $("button").attr("aria-expanded","false");
-                        setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 200);
-                        setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 200);
-                        setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 200);
-                        setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 100);
+                        setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 150);
+                        setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 150);
+                        setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 150);
+                        setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 150);
                         i = true;
                 }
                  if ($(window).width() < 767) {
