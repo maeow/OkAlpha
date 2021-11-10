@@ -1200,11 +1200,14 @@ a, a:hover{
 }
 .line-hidden{
     position: absolute;
-    top: 96px;
+    top: 90px;
     width: 0px;
     left: 230px;
     transition: 0.5s;
     margin-left: 3%;
+    z-index: 900;
+    height: 7px;
+    background-color: #fff;
 }
 .show-email{
     position: relative;
