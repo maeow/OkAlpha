@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -647,7 +646,8 @@ let mqls = [
     window.matchMedia('screen and (max-width: 580px)'), //7
     window.matchMedia('screen and (max-width: 479px)'),  //8
     window.matchMedia('screen and (max-width: 470px)'),  //9
-    window.matchMedia('screen and (max-width: 320px)')  //10
+    window.matchMedia('screen and (max-width: 320px)'),  //10
+    window.matchMedia('screen and (min-width: 1062px)')//11
 
 
 
@@ -1072,7 +1072,7 @@ function test(mql){
                 var revealpoint =-300;
                 if (revealtop01 < windowheight - revealpoint) {
                     console.log("Hello 6666666");
-                    reveals01[i].style.transform = "translatex("+(revealtop01/55*(-5.5)-10)+"%)";
+                    reveals01[i].style.transform = "translatex("+(revealtop01/55*(-5.5)-25)+"%)";
                 }
                 console.log("windowheight: "+windowheight);
                 console.log("revealtop01: "+revealtop01);
@@ -1118,7 +1118,7 @@ function test(mql){
                 var revealpoint =-300;
                 if (revealtop01 < windowheight - revealpoint) {
                     console.log("Hello 00000");
-                    reveals01[i].style.transform = "translatex("+(revealtop01/43*(-5)-10)+"%)";
+                    reveals01[i].style.transform = "translatex("+(revealtop01/43*(-5)-30)+"%)";
                 }
                 console.log("windowheight: "+windowheight);
                 console.log("revealtop01: "+revealtop01);
@@ -1164,7 +1164,55 @@ function test(mql){
                 var revealpoint =-300;
                 if (revealtop01 < windowheight - revealpoint) {
                     console.log("Hello 33");
-                    reveals01[i].style.transform = "translatex("+(revealtop01/53*(-5)-15)+"%)";
+                    reveals01[i].style.transform = "translatex("+(revealtop01/53*(-5)-1)+"%)";
+                }
+                console.log("windowheight: "+windowheight);
+                console.log("revealtop01: "+revealtop01);
+                console.log("yy"+(revealtop01/25*(-1.8)-53))
+
+            }
+
+        }
+        
+ //graph-services
+        let yellow1= document.getElementById('in-graph-yellow-1');
+        let yellow2= document.getElementById('in-graph-yellow-2');
+        let yellow3= document.getElementById('in-graph-yellow-3');
+        let yellow4= document.getElementById('in-graph-yellow-4');
+        window.addEventListener('scroll',function(){
+            var reveals05 = document.querySelectorAll('.services-wrapper');
+            let val = window.scrollY;
+            for (var i = 0; i < reveals05.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop05 = reveals05[i].getBoundingClientRect().top;
+                var revealpoint =-305;
+                if (revealtop05 < windowheight - revealpoint) {
+                    console.log("Hello 44");
+                    yellow1.style.width = ((revealtop05/(-100))*15+90) +'%';
+                    yellow2.style.width = ((revealtop05/(-100))*15+75) +'%';
+                    yellow3.style.width = ((revealtop05/(-100))*16+35) +'%';
+                    yellow4.style.width = ((revealtop05/(-100))*17+5) +'%';
+                }
+                console.log("windowheight: "+windowheight);
+                console.log("revealtop05: "+revealtop05);
+                console.log("y1: "+(revealtop05/(-100)*18+85));
+
+            }
+
+        });
+    }
+    else if(mqls[11].matches){
+        window.addEventListener("scroll", reveal3);
+        function reveal3() {
+            var reveals01 = document.querySelectorAll('.wrap_blue');
+            let val = window.scrollY;
+            for (var i = 0; i < reveals01.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop01 = reveals01[i].getBoundingClientRect().top;
+                var revealpoint =-300;
+                if (revealtop01 < windowheight - revealpoint) {
+                    console.log("Hello 33");
+                    reveals01[i].style.transform = "translatex("+(revealtop01/53*(-4)-20)+"%)";
                 }
                 console.log("windowheight: "+windowheight);
                 console.log("revealtop01: "+revealtop01);
