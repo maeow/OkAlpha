@@ -137,7 +137,7 @@
         transform: translateX(25px);
     }
     #arrow-other{
-        width: 7.5vw;
+        /* width: 7.5vw; */
         transform: rotate(270deg);
         margin-top: 1vw;
         max-width: 100%;
@@ -288,7 +288,7 @@
             letter-spacing: 3px;
         }
         #arrow-other{
-            width: 8vw;
+            /* width: 8vw; */
             margin-top: 1.5vw;
         }
         p{
@@ -314,8 +314,9 @@
     }
     @media screen and (min-width:2200px){
         .container-fluid{
-            padding-left: 8vw;
-            padding-right: 8vw;
+            padding-left: 0vw;
+            padding-right: 0vw;
+            max-width: 1980px;
             padding-bottom: 8vw;
         }
         #arrow-morecontent{
@@ -348,16 +349,24 @@
             letter-spacing: -2;
         }
         #arrow-other{
-            width: 6.2vw;
-            margin-top: 0.8vw;
+            /* width: 20px; */
+            /* 2.9vw */
+            margin-top: 0.5vw;
+            /* 0.5vw */
         }
         .wrap-contact{
-            margin-left: 11vw;
-            margin-right: 11vw;
+            margin-left: 0vw;
+            margin-right: 0vw;
         }
         .contact{
             padding-top: 200px;
             padding-bottom: 200px;
+        }
+        .contact-width{
+            max-width: 1980px;
+            margin-left: auto;
+            margin-right: auto;
+
         }
         .hello{
             font-size: 220px;
@@ -401,7 +410,7 @@
         }
         #arrow-other{
             width: 9.5vw;
-            margin-top: -0.5vw;
+            margin-top: -1vw;
         }
         .titleProject{
             font-size: 120px;
@@ -1155,6 +1164,9 @@
 
     <!-- Contact -->
     <footer class="contact">
+        <div class="contact-width">
+
+       
         <div class="wrap-contact">
             <div class="row contact-head">
                 <div class="col-12">
@@ -1185,6 +1197,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </footer>
 </body>   
 
