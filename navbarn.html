@@ -18,7 +18,7 @@
         <div class="nav w-nav">
             <div class="wrapper w-container">
                 <div class="navbody">
-                    <a class="navbar-brand" href="#"><img class="nav-logo"src="pic/logo-okalpha.svg" alt="" class="nav-logo"></a>
+                    <a class="navbar-brand" href="#"><img class="nav-logo" src="/picnest/logo-okalpha.svg" alt="" class="nav-logo"></a>
                     <button class="navbar-toggler" id="toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" onclick=pic() aria-label="Toggle navigation">
                         <img id="one" src="pic/icon-menu.svg" width="28" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86d" alt="" class="nav-icon">
                         <img id="two" src="pic/icon-close.svg" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86e" alt="" class="nav-icon-close">
@@ -58,7 +58,7 @@
     i = true;
     function pic(){
         if (i == true) {
-            if ($(window).width() < 990) {
+            if ($(window).width() <= 990) {
                       document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                       document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                     //   show.style = "display : block;";
@@ -85,7 +85,7 @@
             }
         }
         else if (i == false) {
-            if ($(window).width() < 990) {
+            if ($(window).width() <= 990) {
                     document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                     document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                     show.style.animation = "sh3 0.5s forwards";
