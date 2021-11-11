@@ -690,7 +690,7 @@ a, a:hover{
         padding-left: 70px;
     }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .hello{
         font-size: 40px;
         margin-bottom: 10px;
@@ -703,8 +703,9 @@ a, a:hover{
     .to-email{
         font-size: 30px;
         margin-bottom: 30px;
-        padding-left: 5px;
+        margin-left: 0px;
     }
+    
     .address-data{
         font-size: 16px;
         line-height: 25px;
@@ -811,11 +812,164 @@ display: none;
     padding: 7%;
     display: none;
 }
-@media only screen and (max-width: 1680px){
+@media only screen and (max-width: 1679px){
     .contact{
         margin-top: -50px;
     }
+    .pin{
+        height: 237;
+    }
+    .goofy{
+        height: 237;
+    }
+    .piet{
+        height: 490;
+    }
+    .retro{
+        height: 237;
+    }
+    .gridlock{
+        height: 237;
+    }
+    .movie{
+        height: 490;
+    }
+    .thermo{
+        height: 237;
+    }
+    .retro-watch{
+        height: 237;
+    }
+    .noise{
+        height: 237;
+    }
+    .jug{
+        height: 237;
+    }
+    .pointer{
+        height: 237;
+    }
+    .sundae{
+        height: 237;
+    }
+    .viewmaster{
+        height: 490;
+    }
+    .vintage{
+        height: 237;
+    }
+    .kids{
+        height: 237;
+    }
+    .toys{
+        height: 490;
+    }
+    .pifco{
+        height: 490;
+    }
+    .olympic{
+        height: 490;
+    }
+}
+@media only screen and (max-width:1679px){
+    #first{
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    .col-3 div{
+        width: 125%;
+    }
+    .col-3{
+        margin-right: 0px;
+    }
+    .piet{
+        margin-left: 70px;
+
+    }
+    .retro{
+        margin-left: 15px;
+    }
+    .gridlock{
+        margin-left: 15px;
+    }
+    .movie{
+        width: 600px;
+    }
+    .thermo{
+        
+        margin-left: 30px;
+    }
+    .noise{
+        margin-left: 15px;
+    }
+    .jug{
+        margin-left: 15px;
+    }
+    .viewmaster{
+        margin-left: 30px;
+    }
+    .vintage{
+        margin-left: 15px;
+    }
+    .kids{
+        margin-left: 15px;
+    }
+    .pifco{
+        margin-left: 30px;
+    }
+    .olympic{
+        margin-left: 15px;
+    }
     
+}
+@media only screen and (max-width: 1025px){
+    #first{
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    .col-3 div{
+        width: 125%;
+    }
+    .col-3{
+        margin-right: 0px;
+    }
+    .piet{
+        margin-left: 30px;
+    }
+    .retro{
+        margin-left: 15px;
+    }
+    .gridlock{
+        margin-left: 15px;
+    }
+    .movie{
+        width: 380px;
+    }
+    .thermo{
+        
+        margin-left: 30px;
+    }
+    .noise{
+        margin-left: 15px;
+    }
+    .jug{
+        margin-left: 15px;
+    }
+    .viewmaster{
+        margin-left: 30px;
+    }
+    .vintage{
+        margin-left: 15px;
+    }
+    .kids{
+        margin-left: 15px;
+    }
+    .pifco{
+        margin-left: 30px;
+    }
+    .olympic{
+        margin-left: 15px;
+    }
 }
 @media only screen and (max-width: 991px){
 #first{
