@@ -1574,6 +1574,9 @@ a, a:hover{
         top:-125px;
         right: -300px;
     }
+    .team_person:nth-child(even){
+        margin-top: 30px;
+    }
     
 }
 @media screen and (max-width: 479px){
@@ -1610,6 +1613,12 @@ a, a:hover{
     }
     .services{
         height: auto;
+    }
+    .team_person:nth-child(even){
+        margin-top: 30px;
+    }
+    .team_person .Grant{
+        margin-bottom: 20px;
     }
 
 }
@@ -1754,7 +1763,3 @@ a, a:hover{
         height: 250px;
     }
 }
-
-
-
-    
