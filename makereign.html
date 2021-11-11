@@ -660,7 +660,7 @@
         position: flex;
         background-color: rgb(255, 255, 255);
         width: 101%;
-        /* z-index: 900; */
+        z-index: 900;
         margin: -0.5%;
     }
     .nav-link:hover{
@@ -1016,11 +1016,11 @@
     @keyframes sh3{
         from{
             height: 53.5vw;
-            top: 100%;
+            top: 120%;
         }
         to{
             height: 0vw;
-            top: -110%;
+            top: -5%;
         }
     }
 
@@ -1235,10 +1235,10 @@
                       document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                       document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                       show.style = "display : block;";
-                      setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 200);
-                      setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 200);
-                      setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 200);
-                      setTimeout(function(){document.getElementById('six').style.display = 'block'; }, 200);
+                      setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 165);
+                      setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 160);
+                      setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 150);
+                      setTimeout(function(){document.getElementById('six').style.display = 'block'; }, 100);
                      show.style.animation = "sh2 0.5s forwards";
                      $("button").attr("aria-expanded","true");
                     i = false;
@@ -1250,10 +1250,10 @@
                     document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                     show.style.animation = "sh3 0.5s forwards";
                     $("button").attr("aria-expanded","false");
-                    setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 200);
-                    setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 200);
-                    setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 200);
-                    setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 200);
+                    setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 100);
+                    setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 150);
+                    setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 160);
+                    setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 165);
                     i = true;
             }
              if ($(window).width() < 767) {
