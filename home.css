@@ -1431,11 +1431,11 @@ a, a:hover{
 }
 @media screen and (max-width: 767px){
     #section-blue{
-        padding-bottom: 40px;
+        padding-bottom: 60px;
         padding-top: 20px;
     }
     .services-wrapper{
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     #services-head{
         width: 100%;
@@ -1463,12 +1463,12 @@ a, a:hover{
     
     }
     .services{
-        height: 245px;
+        height: 250px;
         padding-bottom: 20px;
     }
     .services-description{
-        margin-top: 30px;
-        padding-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 30px;
     }
     #in-graph-yellow-1{
         max-width: 100%;
@@ -1577,6 +1577,10 @@ a, a:hover{
     
 }
 @media screen and (max-width: 479px){
+    #section-blue{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
     #circle{
         width: 600px;
         height: 600px;
@@ -1584,6 +1588,30 @@ a, a:hover{
         top:-125px;
         right: -300px;
     }
+   
+    .services-synopsis {
+        font-size: 14px;
+    }
+    .services-description{
+        margin-top: 27px;
+        padding-bottom: 30px;
+        height: 400px;
+    }
+    #sorn{
+        right: 20px;
+    }
+    .services-hide{
+        /* padding-top: 5px; */
+        padding-bottom: 2px;
+    }
+    .services-title{
+       margin-top: 5px;
+       font-size: 20px;
+    }
+    .services{
+        height: auto;
+    }
+
 }
 @media screen and (min-width: 1680px){
     .wrap_blue{
@@ -1730,4 +1758,3 @@ a, a:hover{
 
 
     
-
