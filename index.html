@@ -644,7 +644,8 @@ let mqls = [
     window.matchMedia('screen and (min-width: 2000px)'),//5
     window.matchMedia('screen and (max-width: 665px)'), //6
     window.matchMedia('screen and (max-width: 580px)'), //7
-    window.matchMedia('screen and (max-width: 479px)')  //8
+    window.matchMedia('screen and (max-width: 479px)'),  //8
+    window.matchMedia('screen and (max-width: 322px)')  //9
 
 
 ];
@@ -652,7 +653,58 @@ let mqls = [
 
 
 function test(mql){
-    if( mqls[8].matches ){
+    if( mqls[9].matches ){
+
+        window.addEventListener("scroll", reveal1);
+        function reveal1() {
+            var reveals01 = document.querySelectorAll('.wrap_blue');
+            // let val = window.scrollY;
+
+            for (var i = 0; i < reveals01.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop01 = reveals01[i].getBoundingClientRect().top;
+                let val = window.scrollY;
+                var revealpoint =-100;
+                if (revealtop01 < windowheight - revealpoint) {
+                    console.log("Hello 11");
+
+                    reveals01[i].style.transform = "translatex("+(val/1000*(105)-380)+"%)";
+                }
+                // console.log("val: "+val);
+                // console.log("revealtop01: "+revealtop01);
+                // console.log("yyyyyy"+(revealtop01/1000*(105)-440)) 
+            }
+        }
+
+//graph-services
+        let yellow1= document.getElementById('in-graph-yellow-1');
+        let yellow2= document.getElementById('in-graph-yellow-2');
+        let yellow3= document.getElementById('in-graph-yellow-3');
+        let yellow4= document.getElementById('in-graph-yellow-4');
+        window.addEventListener('scroll',function(){
+            var reveals05 = document.querySelectorAll('.services-wrapper');
+            // let val = window.scrollY;
+            for (var i = 0; i < reveals05.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop05 = reveals05[i].getBoundingClientRect().top;
+                var revealpoint =0;
+                let val = window.scrollY;
+                if (revealtop05 < windowheight - revealpoint) {
+                    console.log("Hello 55");
+                    yellow1.style.width = ((val/(100))*(12.5)-82) +'%';
+                    yellow2.style.width = ((val/(100))*(13)-100) +'%';
+                    yellow3.style.width = ((val/(100))*(14)-120) +'%';
+                    yellow4.style.width = ((val/(100))*(14.5)-140) +'%';
+                }
+    // console.log("valt55: "+windowheight);
+    // console.log("revealtop0555: "+revealtop05);
+    // console.log("y1555: "+(val/(100)*(-0.2)+85));
+
+            }
+
+        });
+    }
+    else if( mqls[8].matches ){
 
         window.addEventListener("scroll", reveal1);
         function reveal1() {
@@ -1442,3 +1494,4 @@ function arrow13(){
 }
     </script>
 </html>
+ 
