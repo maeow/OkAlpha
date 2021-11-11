@@ -28,6 +28,10 @@ src: url("/font/NHaasGroteskTXPro-55Rg.otf") format("opentype");
     font-family: NHaasGroteskDSProrg;
     src: url("/font/NHaasGroteskDSPro-55Rg.otf") format("opentype");
 }
+@font-face {
+font-family: NHaasGroteskDSProwow;
+src: url("/font/NHaasGroteskDSPro-65Md.otf") format("opentype");
+}
     #pum{
             /* margin-top: 22%; */
             font-size: 150%;
@@ -412,13 +416,16 @@ h3{
            width: 100%;
            margin-left: 0;
        }
+       /* เพิ่ม */
        .container-fluid{
            padding: 10%;
+           padding-top: 0;
        }
        .to-email{
            margin-left: 5%;
        }
        
+
 }
 
 
@@ -497,8 +504,9 @@ color:black;
 position: flex;
 background-color: rgb(255, 255, 255);
 width: 99%;
+margin-left: 20px;
 /* z-index: 900; */
-margin: -0.5%;
+/* margin: -0.5%; */
 }
 .nav-link:hover{
 color: #005cef;
@@ -594,10 +602,12 @@ width: 125%;
 .wrapper {
 position: relative;
 /* z-index: 100; */
-width: 84%;
+/* width: 84%; */
+width: 100%;
 max-width: 1980px;
-margin-right: auto;
-margin-left: auto;
+/* margin-right: auto; */
+/* margin-left: auto; */
+
 }
 #one{
     position: relative; 
@@ -636,14 +646,14 @@ position: absolute;
 color: black;
 background-color: black;
 height:5px;
-width: 120%;
+width: 99%;
 float: left;
 margin-top: 0%;
-margin-left: -110px;
+/* margin-left: -110px; */
 /* z-index: 900; */
 }
-
-@media screen and (max-width:990px) {
+/* แก้จาก 990 เป้น 991 */
+@media screen and (max-width:991px) {
 body{
     max-width: 990px;
 }
@@ -694,9 +704,18 @@ font-size: 4vw;
     font-family: NHaasGroteskDSPro;
     z-index: -5;
 }
+#con{
+    padding-top: 0px;
+    padding-bottom: 70px;
+}
+    .navbody{
+        margin-left: -15px;
+        width: 104.5%;
+    }
 #line{
     z-index: 900;
     margin-top: -1%;
+    width: 104.5%;
 }
 .navbar-collapse{
     z-index: 100;
@@ -740,6 +759,10 @@ body{
     margin-top: -2%;
     height: 0vw;
 }
+#navbarNav{
+        padding-left: 25px;
+        margin-left: -25px;
+    }
 .blue{
     margin-top: 20%;
     padding: 3rem;
@@ -782,10 +805,19 @@ h4{
 #sqr{
    margin-top: 5px;
 }
-p{
+    p{
     margin-top: 1rem;
-}
-
+    }
+    .container-fluid{
+        padding-top: 0%;
+    }
+    .navbody{
+        width: 98%;
+        margin-left: 9px;
+    }
+    #line{
+        width: 96%;
+    }
 }
 
 
@@ -860,15 +892,17 @@ to{
 }
 @media screen and (max-width: 478px){
     #con{
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
     #line{
-        width: 110%;
-        margin-left: -16px;
+        width: 100%;
+        margin-left: -10px;
     }
     #navbarNav{
+        padding-left: 16px;
         margin-left: -16px;
     }
+
 }
 /*  */
     </style>
@@ -879,7 +913,7 @@ to{
         <div class="nav w-nav">
             <div class="wrapper w-container">
                 <div class="navbody">
-                    <a class="navbar-brand" href="#"><img class="nav-logo"src="pic/logo-okalpha.svg" alt="" class="nav-logo"></a>
+                    <a class="navbar-brand" href="#"><img class="nav-logo" src="/picnest/logo-okalpha.svg" alt="" class="nav-logo"></a>
                     <button class="navbar-toggler" id="toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" onclick=pic() aria-label="Toggle navigation">
                         <img id="one" src="pic/icon-menu.svg" width="28" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86d" alt="" class="nav-icon">
                         <img id="two" src="pic/icon-close.svg" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86e" alt="" class="nav-icon-close">
@@ -889,7 +923,7 @@ to{
                         <div class="navbar-nav">
                             <a class="nav-item1 nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             <a class="nav-item1 nav-link" href="#">Work</a>
-                            <a class="nav-item1 nav-link active" href="#">Shop</a>
+                            <a class="nav-item1 nav-link" href="shop5.html">Shop</a>
                             <a class="nav-item1 nav-link" href="#">Contact</a>
                          </div>
                     </div>
@@ -899,7 +933,7 @@ to{
                         <div class="navbar-nav">
                             <a id="three" class="nav-item nav-link " href="#">Home <span class="sr-only">(current)</span></a>
                             <a id="four" class="nav-item nav-link" href="#">Work</a>
-                            <a id="five" class="nav-item nav-link active" href="#">Shop</a>
+                            <a id="five" class="nav-item nav-link" href="shop5.html">Shop</a>
                             <a id="six" class="nav-item nav-link" href="#">Contact</a>
                         </div>
                     </div>
@@ -980,6 +1014,7 @@ to{
     return false;
   });
     </script>
+
     <script>
         let show = document.getElementById("navbarNav");
         
@@ -991,7 +1026,7 @@ to{
         i = true;
         function pic(){
             if (i == true) {
-                if ($(window).width() < 990) {
+                if ($(window).width() <= 991) {
                           document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                           document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                         //   show.style = "display : block;";
@@ -1018,7 +1053,7 @@ to{
                 }
             }
             else if (i == false) {
-                if ($(window).width() < 990) {
+                if ($(window).width() <= 991) {
                         document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                         document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                         show.style.animation = "sh3 0.5s forwards";
