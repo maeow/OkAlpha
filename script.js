@@ -179,7 +179,7 @@ function show9(){
 }
 
 let show = document.getElementById("navbarNav");
-    
+let shows = document.getElementById("navbar-nav");
     var x = window.matchMedia("only screen and (max-width: 990px)");
     var y = window.matchMedia("only screen and (max-width: 767px)");
     var z = window.matchMedia("only screen and (min-width: 990px)");
@@ -191,8 +191,8 @@ let show = document.getElementById("navbarNav");
             if ($(window).width() < 990) {
                       document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                       document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
-                    //   show.style = "display : block;";
-                    setTimeout(function(){show.style.display = 'block'; }, 320);
+                      show.style = "display : block;";
+                    // setTimeout(function(){show.style.display = 'block'; }, 320);
                       setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 200);
                       setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 200);
                       setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 200);
@@ -210,6 +210,7 @@ let show = document.getElementById("navbarNav");
                       setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 200);
                       setTimeout(function(){document.getElementById('six').style.display = 'block'; }, 200);
                      show.style.animation = "sh2 0.5s forwards";
+                     
                      $("button").attr("aria-expanded","true");
                     i = false;
             }
@@ -218,12 +219,12 @@ let show = document.getElementById("navbarNav");
             if ($(window).width() < 990) {
                     document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                     document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
-                    show.style.animation = "sh3 0.5s forwards";
+                    show.style.animation = "sh3 1s forwards";
                     $("button").attr("aria-expanded","false");
-                    setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 200);
+                    setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 100);
                     setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 200);
-                    setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 200);
-                    setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 200);
+                    setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 250);
+                    setTimeout(function(){document.getElementById('six').style.display = 'none'; },300);
                     i = true;
             }
              if ($(window).width() < 767) {
