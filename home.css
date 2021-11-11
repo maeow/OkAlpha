@@ -1560,6 +1560,9 @@ a, a:hover{
     #top-arrow{
         display: none;
     }
+    .wrap-arrow{
+        display: none;
+    }
     .wrap_blue{
         width: 1600px;
         height: 600px;
@@ -1572,6 +1575,15 @@ a, a:hover{
         right: -300px;
     }
     
+}
+@media screen and (max-width: 479px){
+    #circle{
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top:-125px;
+        right: -300px;
+    }
 }
 @media screen and (min-width: 1680px){
     .wrap_blue{
@@ -1714,3 +1726,8 @@ a, a:hover{
         height: 250px;
     }
 }
+
+
+
+    
+
