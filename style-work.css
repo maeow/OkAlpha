@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+@font-face {
+    font-family: NHaasGroteskDSPro;
+    src: url("NHaasGroteskDSPro-65Md") format("opentype");
+}
+@font-face {
+    font-family: NHaasGroteskDSProl;
+    src: url("NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+body{
+    /* font-family: 'Archivo', sans-serif; */
+    background-color: #ff1f25;
+    font-family: NHaasGroteskDSPro, sans-serif;
+    color: white;
+    /* overflow-x: hidden; */
+    /* overflow: scroll; */
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: -5.5px;
+    font-size: 125px;
+    line-height: 1;
+    font-weight: 700;
+}
+.alpha-O{
+    font-family: 'Public Sans', sans-serif;
+}
+.top{
+    padding-top: 190px;
+    padding-bottom: 100px;
+}
+.col-12{
+    padding: 0;
+}
+.container{
+    max-width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+
+.bg{
+    float: right;
+    width: 55vw;
+    left: 48.5vw;
+    position: relative;
+    background-image: linear-gradient(to bottom, #005cef 800px, #fff0 800px);
+    overflow-x: hidden;
+}
+.circle{
+    background-color: #ffdd18;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 100%;
+    margin-top: 200px;
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.wrapper-work{
+    position: relative;
+    overflow: hidden;
+    /* max-width: none; */
+}
+
+.white-line{
+    background-color: white;
+    height: 8px;
+}
+section{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.list{
+    padding-top: 50px;
+    cursor: pointer;
+}
+h4{
+    font-size: 24px;
+    margin-bottom: -16px;
+}
+h3{
+    font-size: 80px;
+    letter-spacing: -4px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.arrow-img{
+    /* float: right; */
+    position: absolute;
+    right: 14px;
+}
+.wrap-project{
+    overflow: hidden;
+    z-index: 100;
+    /* padding: 15px; */
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    width: 45px;
+}
+.list, .arrow, .wrap-project.white-line{
+    z-index: -1;
+}
+.hello{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.box-show{
+    height: 0px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.vdo{
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+video{
+    background-size: cover;
+    position: absolute;
+    height: 545px;
+    left: -70px;
+    cursor: pointer;
+}
+.data{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head-data-project{
+    font-size: 50px;
+    word-spacing: -5px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.data-project{
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+.more-project{
+    background-color: #ffdd18;
+    border: none;
+    padding: 18px 34px;
+    font-size: 20px;
+    font-weight: 500;
+    float: left;
+    transition: 0.2s;
+    z-index: 100;
+}
+.more-project:hover, .wrap-btn:hover .more-project{
+    transform: translateX(13px) translateY(-13.5px);
+}
+.side-btn{
+    background-color: #ebc721;
+    width: 0px;
+    height: 67px;
+    transform-origin: bottom left;
+    transform: skewY(-45deg) translateY(-1px);
+    transition: 0.2s;
+    z-index: -100;
+}
+.buttonWlink:hover ~ .side-btn, .wrap-btn:hover .side-btn{
+    width: 13px;
+}
+.btm-btn{
+    background-color: #d7b129;
+    width: 179.5px;
+    height: 0px;
+    transition: 0.2s;
+    z-index: -100;
+    transform-origin: top left;
+    transform: rotateX(180deg) skewX(45deg) translateY(0px) translateX(-1px);
+}
+.buttonWlink:hover ~ .btm-btn, .wrap-btn:hover .btm-btn{
+    height: 14.5px;
+}
+.wrap-btn{
+    position: relative;
+    width: 210px;
+    height: 25px;
+}
+.more-project:active{
+    border: none;
+}
+button:focus {
+    outline: 0 !important;
+    border: 0;
+}
+.contact{
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+.email, .address{
+    font-size: 20px;
+    display: block;
+}
+.address-data{
+    font-weight: lighter;
+    line-height: 35px;
+}
+.to-email{
+    font-size: 60px;
+    margin-top: 0;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+}
+.contact-email{
+    line-height: 25px;
+}
+a, a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+.line-hidden{
+    position: absolute;
+    top: 70px;
+    width: 0px;
+    left: 230px;
+    transition: 0.5s;
+}
+.show-email{
+    padding: 0;
+}
+.show-email:hover .line-hidden{
+    width: 460px;
+    left: 0;
+}
+#top-arrow{
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    top: 0;
+    height: 250px;
+}
+.wrap-arrow{
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: -15px;
+}
+.wrap-contact{
+    position: relative;
+}
+.wrap-arrow:hover #top-arrow, a[href='#top']:hover #top-arrow, #top-arrow:hover{
+    top: -50px;
+}
+.white-line-hello{
+    margin-bottom: 40px;
+}
+@media screen and (min-width:1680px) {
+    .hello{
+        margin-bottom: 40px;
+    }
+    .top{
+        padding-top: 260px;
+        padding-bottom: 200px;
+    }
+    .circle{
+        width: 1700px;
+        height: 1700px;
+        margin-top: 250px;
+    }
+    .bg{
+        background-image: linear-gradient(to bottom, #005cef 1100px, #fff0 1100px);
+    }
+    h1{
+        font-size: 220px;
+    }
+    .list{
+        padding-top: 100px;
+    }
+    h3{
+        padding-bottom: 60px;
+        font-size: 110px;
+        margin-top: 0;
+    }
+    h4{
+        font-size: 30px;
+    }
+    img{
+        width: 65px;
+    }
+    .contact{
+        margin-bottom: 70px;
+        margin-top: 140px;
+    }
+    .arrow{
+        padding-top: 25px;
+    }
+    .email,.address{
+        font-size: 25px;
+    }
+    .address-data{
+        line-height: 47px;
+    }
+    #top-arrow{
+        width: 85px;
+        height: 300px;
+    }
+}
+@media screen and (min-width:2200px) {
+    .top{
+        padding-top: 320px;
+        padding-bottom: 230px;
+    }
+    .navbody{
+        max-width: 1980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #line{
+        max-width: 1980px;
+    }
+    .content{
+        max-width: 1980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container{
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .circle{
+        width: 2000px;
+        height: 2000px;
+        margin-top: 220px;
+    }
+    .bg{
+        background-image: linear-gradient(to bottom, #005cef 1220px, #fff0 1220px);
+    }
+    h3{
+        font-size: 140px;
+    }
+    .email,.address{
+        font-size: 30px;
+    }
+    #top-arrow{
+        width: 90px;
+        height: 340px;
+    }
+    .contact{
+        padding-bottom: 200px;
+        padding-top: 350px;
+    }
+}
+@media screen and (max-width: 991px){
+    .show-email:hover .line-hidden{
+        display: none;
+        width: 0px;
+    }
+    .circle{
+        width: 850px;
+        height: 850px;
+        margin-top: 150px;
+    }
+    .bg{
+        background-image: linear-gradient(to bottom, #005cef 575px, #fff0 575px);
+    }
+    .hello{
+        font-size: 90px;
+    }
+    .to-email{
+        font-size: 40px;
+    }
+    .data-project{
+        margin-bottom: 60px;
+        font-size: 16px;
+    }
+    .head-data-project{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .data{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    h3{
+        font-size: 70px;
+        padding-bottom: 20px;
+    }
+    img{
+        width: 35px;
+    }
+    h1{
+        font-size: 120px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .circle{
+        width: 600px;
+        height: 600px;
+        margin-top: 125px;
+    }
+    .bg{
+        background-image: linear-gradient(to bottom, #005cef 425px, #fff0 425px);
+    }
+    .hello{
+        font-size: 40px;
+        margin-bottom: 10px;
+        letter-spacing: -1px;
+    }
+    .email,.address{
+        font-size: 16px;
+    }
+    .to-email{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .address-data{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .contact{
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .allproject{
+        padding-bottom: 50px;
+    }
+    .wrap-arrow{
+        display: none;
+    }
+    .white-line-hello{
+        margin-bottom: 30px;
+    }
+    h1{
+        margin-bottom: 0px;
+        font-size: 70px;
+        letter-spacing: -3px;
+    }
+    .top{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    section{
+        padding-top: 20px;
+    }
+    .white-line{
+        height: 4px;
+        transition: 0.5s;
+    }
+    h4{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    h3{
+        font-size: 26px;
+        letter-spacing: -1px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .list{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    /* .container{
+        margin-left: 0;
+        margin-right: 0;
+    } */
+    .arrow-img{
+        transform: rotate(-90deg);
+        right: 17.5px;
+    }
+    img{
+        width: 24px;
+    }
+}
+@media screen and (max-width: 479px){
+    #circle{
+        width: 400px;
+        height: 400px;
+        margin-top: 125px;
+    }
+    #bg{
+        background-image: linear-gradient(to bottom, #005cef 325px, #fff0 325px);
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(-180deg);
+    }
+}
+@keyframes spin2{
+    from{
+        transform: rotate(-180deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+@keyframes showmore{
+    to{
+        height: 545px;
+    }
+}
+@keyframes showmore2{
+    from{
+        height: 545px;
+    }
+    to{
+        height: 0px;
+    }
+}
+
