@@ -367,7 +367,7 @@ width: 80%;
 
 @keyframes sh1{
 to{
-    height: 53.5vw;
+    height: 60vw;
     top: 120%;
 }
 }
@@ -381,12 +381,12 @@ to{
 
 @keyframes sh3{
 from{
-    height: 53.5vw;
-    top: 100%;
+    height: 60vw;
+    top: 120%;
 }
 to{
     height: 0vw;
-    top: -110%;
+    top: 0%;
     
 }
 }
@@ -413,4 +413,3 @@ to{
         margin-left: -16px;
     }
 }
-
