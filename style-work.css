@@ -287,9 +287,13 @@ a, a:hover{
     margin-bottom: 40px;
 }
 @media screen and (min-width:1680px) {
-    .vdo{
+    video{
         left: 0;
         height: 800px;
+    }
+    .vdo{
+        left: 0;
+        /* height: 800px; */
     }
     .hello{
         margin-bottom: 40px;
@@ -569,3 +573,5 @@ a, a:hover{
         height: 0px;
     }
 }
+
+
