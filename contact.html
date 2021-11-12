@@ -187,22 +187,18 @@ let shows = document.getElementById("navbar-nav");
         }
         // alert('s')
         function resize() {
-            console.log('s')
             if(i2){
                 if($(window).width() < 767){
                 shownav.style.animation = "none";
                 shownav.style.height = "280px";
                 shownav.style.top = "75px";
-                console.log('1')
             }
             else if($(window).width() < 991){
                 shownav.style.animation = "none";
                 shownav.style.height = "620px";
                 shownav.style.top = "140px";
-                console.log('2')
             }
             else{
-                console.log('3')
             }
             }
             if ($(window).width() > 990) {
