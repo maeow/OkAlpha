@@ -180,7 +180,7 @@ video{
     float: left;
     transition: 0.2s;
     z-index: 100;
-    left: 0.5px;
+    left: -0.5px;
     top: 0px;
     position: relative;
 }
