@@ -287,6 +287,24 @@ a, a:hover{
     margin-bottom: 40px;
 }
 @media screen and (min-width:1680px) {
+.head-data-project{
+    font-size: 60px;
+}
+.data{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.data-project{
+    font-size: 24px;
+}
+.more-project{
+    font-weight: bolder;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+.btm-btn{
+    width: 192px;
+}
     video{
         left: 0;
         height: 800px;
@@ -346,6 +364,10 @@ a, a:hover{
     }
 }
 @media screen and (min-width:2200px) {
+    .data{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
     .top{
         padding-top: 320px;
         padding-bottom: 230px;
@@ -573,5 +595,3 @@ a, a:hover{
         height: 0px;
     }
 }
-
-
