@@ -275,17 +275,17 @@ body{
 }
 @media screen and (max-width:767px) {
 #line{
-    height: 2px;
+    height: 4px;
 }
 body{
     overflow-x: hidden;
 }
 .navbar-show{
-    margin-top: 22px;
+    margin-top: 11px;
     height: 0vw;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 100%;
 }
 .blue{
     margin-top: 20%;
@@ -305,8 +305,8 @@ position: relative;
 padding: 0;
 display: none;
 margin-top: 4%;
-margin-right: 50px;
-font-size: 3vw;
+margin-right: auto;
+font-size: 20px;
 }
 #ww{
    text-align: left;
@@ -334,10 +334,14 @@ p{
 }
 .nav-logo{
         width: 75px;
-    margin-top:30px;
+        padding-top:30px;
+        padding-bottom:10px;
     }
  .navbar-toggler{
         margin-top:30px;
+    }
+   #three{
+        margin-top:25px;
     }
 }
 
@@ -385,7 +389,7 @@ to{
 @keyframes sh2{
 to{
     top: 5%;
-    height: 35vw;
+    height: 240px;
 }
 }
 
@@ -416,7 +420,7 @@ to{
 
 @keyframes sh4{
 from{
-    height: 35vw;
+    height: 240px;
     top: 5%;
 }
 to{
