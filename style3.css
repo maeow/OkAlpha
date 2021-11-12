@@ -138,12 +138,15 @@ video{
 .more-project{
     background-color: #ffdd18;
     border: none;
-    padding: 18px 34px;
+    padding: 19px 31.5px 19px 32.0px;
     font-size: 20px;
     font-weight: 500;
     float: left;
     transition: 0.2s;
     z-index: 100;
+    left: 0.5px;
+    top: 0px;
+    position: relative;
 }
 .more-project:hover, .wrap-btn:hover .more-project{
     transform: translateX(13px) translateY(-13.5px);
@@ -155,7 +158,8 @@ video{
     transform-origin: bottom left;
     transform: skewY(-45deg) translateY(-1px);
     transition: 0.2s;
-    z-index: -100;
+    z-index: 102;
+    position: relative;
 }
 .buttonWlink:hover ~ .side-btn, .wrap-btn:hover .side-btn{
     width: 13px;
@@ -165,7 +169,8 @@ video{
     width: 182.5px;
     height: 0px;
     transition: 0.2s;
-    z-index: -100;
+    z-index: 102;
+    position: relative;
     transform-origin: top left;
     transform: rotateX(180deg) skewX(45deg) translateY(0px) translateX(-1px);
 }
