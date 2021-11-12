@@ -51,13 +51,22 @@ src: url("/font/NHaasGroteskDSPro-65Md.otf") format("opentype");
             cursor: pointer;
         }
         #box{
-          margin-top: 5%;
+          /* margin-top: 60px;
+          height: 120px; */
+          margin-left: 0;
+          margin-right: 0;
+      }
+      #box1{
+        /* height: 120px;
+        margin-top: 100px; */
+        margin-left: 0;
+        margin-right: 0;
       }
         .button1 {background-color:#ff1f25;}
 
       #row-in-col2{
           /* style="margin-top: 3.5%;" */
-          margin-top: 19.5%;
+          margin-top: 120px;
       }
       .container-fluid{
           padding: 7%;
@@ -78,7 +87,7 @@ src: url("/font/NHaasGroteskDSPro-65Md.otf") format("opentype");
             font-family: NHaasGroteskDSPro;
         }
         p{
-            font-size: 175%;
+            font-size: 20px;
             font-family: NHaasGroteskDSProl;
         }
         #jen{
@@ -101,12 +110,18 @@ src: url("/font/NHaasGroteskDSPro-65Md.otf") format("opentype");
     margin-left: 5%;
 }
 #pic1{
+    /* 
+    margin-left: 4%; */
+    /* width: 370px; */
+    margin-left: 15px;
     width: 96%;
-    margin-left: 4%;
 }
 #pic2{
+    /* 
+    margin-left: 2.5%; */
+    /* width: 370px; */
+    margin-left: 10px;
     width: 96%;
-    margin-left: 2.5%;
 }
 
 /* footer */
@@ -129,7 +144,7 @@ src: url("/font/NHaasGroteskDSPro-65Md.otf") format("opentype");
 .contact{
     padding-top: 90px;
     padding-bottom: 80px;
-    padding-left: 2%;
+    /* padding-left: 2%; */
 }
 .email{
     margin-top: 2%;
@@ -337,29 +352,82 @@ h3{
 }
 
 /* เนส */
-@media screen and (min-width:2200px){
-    #row-in-col2{
-        margin-top: 23%;
+/* @media screen and (min-width:1025px){
+    .col-6{
+        padding-left: 0;
     }
-     p{
-        font-size: 200%;
-    } 
+    #pic1{
+        width: 100%;
+    }
+} */
+@media only screen and (min-width: 1680px){
+    
+    p{
+        font-size: 28px;
+    }
+    /* #row-in-col2{
+        margin-top: 100px;
+    } */
+    #pic1{
+        margin-left: 13px;
+        width: 97%;
+    }
+    #pic2{
+        width: 97%;
+        margin-left: 6px;
+    }
+    
 }
+@media screen and (min-width:2200px){
+    /* #row-in-col2{
+        margin-top: 23%;
+    } */
+     p{
+        font-size: 32px;
+    } 
+    #pic1{
+        margin-left: 17px;
+    }
+}
+
 @media screen and (max-width:1919px){
     #row-in-col2{
         margin-top: 21%;
     }
 
 }
-@media only screen and (max-width: 1679px){
-    
-    p{
-        font-size: 18px;
-    }
-    #row-in-col2{
-        margin-top: 0%;
-    }
 
+@media screen and (-width:1440px){
+    #pic1{
+        width:98%;
+        margin-left: 5px;
+    }
+    #pic2{
+        width: 98%;
+        margin-left: 5px;
+    }
+    #box1{
+        margin-top: 0;
+    }
+    #pum{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+/* min-width: 1084px */
+@media only screen and (min-width: 1025px){
+    #box{
+        margin-top: 40px;
+    }
+    #box1{
+        margin-top: 70px;
+    }
+}
+
+@media (min-width:991px) and (max-width: 1024px){
+    p{
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width: 1024px)  {
     .first{
@@ -367,14 +435,16 @@ h3{
     }
     #pic3{
         width: 190%;
+        margin-bottom: 10px;
     }
     #pic1{
         width: 222%;
         margin-left: -6px;
+       
     }
     #pic2{
         width: 222%;
-        margin-left: 226px;
+        margin-left: 225px;
     }
     #col2{
         width: 100%;
@@ -382,13 +452,27 @@ h3{
     }
     #col2{
         margin-top: 70px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
     #row-in-col2{
-        margin-top: 0;
+        margin-top: 50px;
     }
+    p{
+        font-size:20px;
+    }
+    #box{
+        /* margin-top: -30px; */
+        margin-top: 50px;
+    }
+    #box1{
+        margin-top: 40px;
+    }
+    .contact{
+        padding-top: 60px;
+    }
+    
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 #pic1{
         width: 108%;
         /* margin-left: 3%; */
@@ -399,16 +483,19 @@ h3{
     
     margin-left: 1.5%;
 }
-#col2{
+/* #col2{
            margin-top: 5%;
            
-       }
+       } */
        #box{
-           margin-top: 0;
+           margin-top: 40px;
        }
-       #row-in-col2{
-           margin-top: 5%;
+       #box1{
+           margin-top: 20px;
        }
+       /* #row-in-col2{
+           margin-top: ;
+       } */
        /* #pum{
            margin-left: 50%;
        } */
@@ -424,7 +511,9 @@ h3{
        .to-email{
            margin-left: 5%;
        }
-       
+       .contact{
+           margin-top: 50px;
+       }
 
 }
 
@@ -443,10 +532,10 @@ h3{
 
         }
         p{
-            font-size: 115%;
+            font-size: 18px;
         }
        #pic1{
-           margin-left: -0.5%;
+           margin-left: -2px;
            width: 100%;
        }
        #pic2{
@@ -473,8 +562,37 @@ h3{
        .to-email{
            margin-left: 7%;
        }
+       .contact{
+           margin-top: 0px;
+           padding-top: 0;
+       }
 }
-
+@media only screen and (max-width: 478px){
+    #pic1{
+        margin-left: -15px;
+        width: 110%;
+    }
+    #pic2{
+        width: 110%;
+        margin-left: -10px;
+    }
+    #box{
+        margin-top: 0;
+    }
+    .to-email{
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 320px){
+    #pic1{
+        width: 120%;
+        margin-left: -18px;
+    }
+    #pic2{
+        width: 120%;
+        margin-left: -12px;
+    }
+}
 /*  */
 
 
@@ -652,6 +770,16 @@ margin-top: 0%;
 /* margin-left: -110px; */
 /* z-index: 900; */
 }
+
+@media screen and (max-width:1024px){
+    .navbody{
+        margin-left: 4px;
+    }
+    #con{
+        padding-bottom: 70px;
+    }
+    
+} 
 /* แก้จาก 990 เป้น 991 */
 @media screen and (max-width:991px) {
 body{
@@ -904,11 +1032,18 @@ to{
     }
 
 }
+.container-xxl{
+        max-width: 1980px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
 /*  */
     </style>
    
 </head>
 <body>
+    <div class="container-xxl">
     <div class="container-fluid" id="con">
         <div class="nav w-nav">
             <div class="wrapper w-container">
@@ -958,10 +1093,13 @@ to{
                 </div>
             </div>
             <div class="col-12  col-sm-12 col-md-12 col-lg-6 col-xl-6"  id="col2">
-                <h1 id="word">Goofy Bin.</h1><br>
-                <p id="box">We don't really want to sell this 1980s bin, because it's damn near perfect. But, we have too much stuff at the studio. Also, who doesn't need a bin? Why not make it something with a soul.</p><br>
-                <p>Weight: 420g<br>Dimensions: 230mm x 230mm x 265mm<br>Shipping: South Africa<br><a href="" style="text-decoration:none;color: #0d82f2;">Contact us for international rates</a></p>
-                
+                <h1 id="word">Goofy Bin.</h1>
+                <div class="row" id="box">
+                <p >We don't really want to sell this 1980s bin, because it's damn near perfect. But, we have too much stuff at the studio. Also, who doesn't need a bin? Why not make it something with a soul.</p>
+               </div>
+               <div class="row" id="box1">
+                <p >Weight: 420g<br>Dimensions: 230mm x 230mm x 265mm<br>Shipping: South Africa<br><a href="" style="text-decoration:none;color: #0d82f2;">Contact us for international rates</a></p>
+                </div>
                 <div class="row" id="row-in-col2">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <h1  id="r99" ><span style="position: relative;">R289</span></h1>
@@ -1006,6 +1144,7 @@ to{
                 </div>
             </div>
         </footer>
+    </div>
 
     </div>
     <script>
