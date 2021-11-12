@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="navbar-css-contact.css">
+    <link rel="stylesheet" href="style-contact.css">
+    <link rel=icon type=image/png href="picwork/5bd5f0255a6dba7040e273d8_favicon.png" />
+</head>
+<body>
+    <!-- <div class="all"> -->
+    <div class="bg">
+        <div class="circle">
+        </div>
+    </div>
+
+    <div class="nav-back"></div>
+    <!-- navbar -->
+    <div class="navbody">
+        
+        <a class="navbar-brand" href="index.html"><img class="nav-logo"src="picwork/work-logo.svg" alt="" class="nav-logo"></a>
+        <button class="navbar-toggler" id="toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" onclick="pic();check()" aria-label="Toggle navigation">
+            <img id="one" src="picwork/5b264796d7fb57b1f5f2264a_icon-menu-white.svg" width="28" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86d" alt="" class="nav-icon">
+            <img id="two" src="picwork/5b264796388bb0aeb6196b41_icon-close-white.svg" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86e" alt="" class="nav-icon-close">
+        </button>
+
+        <div class="navbar">
+            <div class="navbar-nav">
+                <a class="nav-item1 nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item1 nav-link" href="#">Work</a>
+                <a class="nav-item1 nav-link " href="#">Shop</a>
+                <a class="nav-item1 nav-link active" href="#">Contact</a>
+             </div>
+        </div>
+
+        
+        <div class="navbar-show"id="navbarNav">
+            <div class="navbar-nav">
+                <a id="three" class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a id="four" class="nav-item nav-link" href="#">Work</a>
+                <a id="five" class="nav-item nav-link" href="#">Shop</a>
+                <a id="six" class="nav-item nav-link active" href="#">Contact</a>
+            </div>
+        </div>
+        <hr id="line">
+    </div>
+
+
+    <div class="wrap">
+        <section>
+            <div class="hello-wrap">
+                <h1 class="hello">Say Hello.</h1>
+                <div class="email-wrap">
+                <a href="mailto:info@okalpha.co" class="aemail">
+                    <h2 class="email">info@okalpha.co</h2>
+                    <div class="white-line line-hidden" ></div>
+                </a>
+                </div>
+                <div class="white-line"></div>
+            </div>
+        </section>
+        <section>
+            <div class="socials-wrap">
+                <div class="one">
+                <div id="ig">
+                    <a href="https://www.instagram.com/ok.alpha"><h5 class="social">instagram</h5></a>
+                    <div class="white-line" style="margin-top: 2.5px;"></div>
+                </div>
+                <div id="dri">
+                    <a href="https://dribbble.com/okalpha"><h5 class="social">dribbble</h5></a>
+                    <div class="white-line" style="margin-top: 2.5px;"></div>
+                </div>
+                <div id="behance">
+                    <a href="https://www.behance.net/ok_alpha"><h5 class="social">behance</h5></a>
+                    <div class="white-line" style="margin-top: 2.5px;"></div>
+                </div>
+                </div>
+                <div class="two">
+                <div class="space"></div>
+                <div id="twit">
+                    <a href="https://twitter.com/ok_alpha"><h5 class="social">twitter</h5></a>
+                    <div class="white-line" style="margin-top: 2.5px;"></div>
+                </div>
+                <div id="fb">
+                    <a href="https://www.facebook.com/okalphamotion"><h5 class="social">facebook</h5></a>
+                    <div class="white-line" style="margin-top: 2.5px;"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="address">
+            <h1 class="addr">
+                Address:<br>
+                Unit 10, The Royal<br>
+                4 Queens Park Ave<br>
+                Salt River<br>
+                Cape Town<br>
+                South Africa<br>
+                7925
+            </h1>
+        </section>
+    </div>
+    <script>
+        let show = document.getElementById("navbarNav");
+let shows = document.getElementById("navbar-nav");
+    var x = window.matchMedia("only screen and (max-width: 990px)");
+    var y = window.matchMedia("only screen and (max-width: 767px)");
+    var z = window.matchMedia("only screen and (min-width: 990px)");
+
+
+    var i = true;
+    function pic(){
+        if (i == true) {
+            if ($(window).width() < 990) {
+                      document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                      document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                    //   show.style = "display : block;";
+                    // setTimeout(function(){show.style.display = 'block'; }, 320);
+                      setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 200);
+                      setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 200);
+                      setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 200);
+                      setTimeout(function(){document.getElementById('six').style.display = 'block'; }, 200);
+                     show.style.animation = "sh1 0.5s forwards";
+                     $("button").attr("aria-expanded","true");
+                    i = false;
+            }
+             if ($(window).width() < 767) {
+                      document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                      document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                      show.style = "display : block;";
+                      setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 200);
+                      setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 200);
+                      setTimeout(function(){document.getElementById('five').style.display = 'block'; }, 200);
+                      setTimeout(function(){document.getElementById('six').style.display = 'block'; }, 200);
+                     show.style.animation = "sh2 0.5s forwards";
+                     
+                     $("button").attr("aria-expanded","true");
+                    i = false;
+            }
+        }
+        else if (i == false) {
+            if ($(window).width() < 990) {
+                    document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                    document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                    show.style.animation = "sh3 1.5s forwards";
+                    $("button").attr("aria-expanded","false");
+                    setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 100);
+                    setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 200);
+                    setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 250);
+                    setTimeout(function(){document.getElementById('six').style.display = 'none'; },300);
+                    i = true;
+            }
+             if ($(window).width() < 767) {
+                    document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                    document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                    show.style.animation = "sh4 0.5s forwards";
+                    $("button").attr("aria-expanded","false");
+                    setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 200);
+                    setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 200);
+                    setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 200);
+                    setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 100);
+                    i = true;
+            }
+            }
+        
+        }
+
+
+        // let show = document.getElementById("navbarNav");
+        let shownav = document.querySelector('#navbarNav');
+        let i2 = false;
+
+        function check(){
+            if(i2==false){
+                i2 = true;
+            }
+            else{
+                i2 = false;
+            }
+        }
+        // alert('s')
+        function resize() {
+            console.log('s')
+            if(i2){
+                if($(window).width() < 767){
+                shownav.style.animation = "none";
+                shownav.style.height = "280px";
+                shownav.style.top = "75px";
+                console.log('1')
+            }
+            else if($(window).width() < 991){
+                shownav.style.animation = "none";
+                shownav.style.height = "620px";
+                shownav.style.top = "140px";
+                console.log('2')
+            }
+            else{
+                console.log('3')
+            }
+            }
+            if ($(window).width() > 990) {
+                // shownav.style = "display : none;";
+                shownav.style.height = "0";
+                shownav.style.animation = "none";
+                $("button").attr("aria-expanded","false");
+                document.getElementById('three').style.display = 'none';
+                document.getElementById('four').style.display = 'none';
+                document.getElementById('five').style.display = 'none';
+                document.getElementById('six').style.display = 'none';
+                document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+                i2 = false;
+                i=true;
+            }
+        }
+
+        $(window).on("resize", resize);
+    </script>
+</body>
+</html>
