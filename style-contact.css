@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+@font-face {
+    font-family: NHaasGroteskDSProl;
+    src: url("font/NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+@font-face {
+    font-family: NHaasGroteskDSPro;
+    src: url("NHaasGroteskTXPro-65Md") format("opentype");
+}
+@font-face {
+    font-family: NHaasGroteskDSProl;
+    src: url("NHaasGroteskTXPro-55Rg.otf") format("opentype");
+}
+body{
+    min-height: 100%;
+    /* font-family: 'Archivo', sans-serif; */
+    background-color: #005cef;
+    font-family: NHaasGroteskDSPro, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    /* overflow: scroll; */
+    /* width: 100%;
+    height: 100%; */
+}
+.hello{
+    font-size: 140px;
+    letter-spacing: -9px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.wrap{
+    
+    position: relative;
+    width: 100%;
+    padding: 60px;
+    padding-bottom: 0;
+    padding-left: 103px;
+    padding-right: 103px;
+}
+.white-line{
+    height: 7px;
+    background-color: white;
+    width: 100%;
+}
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.email{
+    font-size: 110px;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: -2px;
+}
+.line-hidden{
+    position: absolute;
+    width: 0;
+    left: 430px;
+    transition: 0.5s;
+}
+.email-wrap{
+    margin-bottom: 95px;
+    position: relative;
+}
+.aemail:hover .line-hidden{
+    width:860px;
+    left: 0;
+}
+.socials-wrap{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.social{
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+.col-1,.col,.col-2,.col-3{
+    padding: 0;
+}
+.social:nth-last-child(){
+    margin-right: 0;
+}
+.address{
+    margin-top: 90px;
+    margin-bottom: 48px;
+}
+.addr{
+    font-size: 70px;
+    font-weight: 600;
+}
+#ig,#dri, #behance,#twit, #fb{
+    position: relative;
+}
+#ig .white-line,#dri .white-line, #behance .white-line,#twit .white-line, #fb .white-line{
+    width: 0;
+    cursor: pointer;
+    left: 50%;
+    transition: 0.5s;
+    position: absolute;
+}
+#ig:hover .white-line,#dri:hover .white-line, #behance:hover .white-line,#twit:hover .white-line, #fb:hover .white-line{
+    width: 100%;
+    left: 0;
+}
+.one, .two{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.two{
+    width: 40%;
+    display: flex;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    overflow: hidden;
+    right: 0%;
+    bottom: -18%;
+}
+/* .circle{
+    background-color: #ffdd18;
+    position: absolute;
+    width: 2500px;
+    bottom: -1850px;
+    right: -1550px;
+    border-radius: 100%;
+} */
+.circle{
+    width: 2500px;
+    height: 2500px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #ffdd18;
+}
+.all{
+    position: relative;
+    background-color: #005cef;
+}
+.circle{
+    top:45%;
+    right: -100%
+}
+@media screen and (min-width:1680px) {
+    .circle{
+        top:55%;
+        right: -95%
+    }
+    .wrap{
+        padding-left: 125px;
+        padding-right: 125px;
+        padding-bottom: 120px;
+    }
+    /* .circle{
+        right: -1550px;
+        bottom: -1650px;
+    } */
+    .hello{
+        font-size: 185px;
+        padding-top: 150px;
+    }
+    .email{
+        margin-top: 50px;
+        font-size: 180px;
+    }
+    .email-wrap{
+        margin-bottom: 120px;
+    }
+    .social{
+        font-size: 60px;
+    }
+    .addr{
+        font-size: 100px;
+        letter-spacing: -5px;
+    }
+}
+@media screen and (min-width:2200px) {
+    .circle{
+        top:55%;
+        right: -60%
+    }
+    .wrap{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 110px;
+        max-width: 1980px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+    /* .circle{
+        right: -1300px;
+        bottom: -1500px;
+    } */
+    .hello{
+        font-size: 250px;
+        padding-top: 150px;
+    }
+    .email{
+        margin-top: 50px;
+        font-size: 180px;
+    }
+    .email-wrap{
+        margin-bottom: 185px;
+    }
+    .addr{
+        font-size: 130px;
+        letter-spacing: -5px;
+    }
+}
+@media screen and (max-width: 1025px) {
+    /* .circle{
+        bottom: -2100px;
+        right: -1800px;
+    } */
+    .circle{
+        top:45%;
+        right: -185%
+    }
+    .hello{
+        font-size: 120px;
+    }
+    .wrap{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .email{
+        font-size: 90px;
+    }
+    .social{
+        font-size: 27px;
+    }
+    .address{
+        margin-bottom: 40px;
+    }
+    .email-wrap{
+        margin-bottom: 80px;
+        margin-top: 30px;
+    }
+    .line-hidden{
+        left: 350px;
+    }
+    .aemail:hover .line-hidden{
+        width:700px;
+    }
+    .hello{
+        font-size: 140px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .wrap{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+    .circle{
+        top:50%;
+        right: -205%
+    }
+    .line-hidden{
+        display: none;
+    }
+    .hello{
+        font-size: 120px;
+        letter-spacing: -10px;
+    }
+    .email{
+        font-size: 57px;
+        margin-top: 25px;
+    }
+    .social{
+        font-size: 22px;
+    }
+    .addr{
+        font-size: 40px;
+    }
+    .address{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .circle{
+        top:65%;
+        right: -235%
+    }
+    .wrap{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .line-hidden{
+        display: none;
+    }
+    .hello{
+        font-size: 70px;
+        letter-spacing: -4px;
+    }
+    .email{
+        font-size: 30px;
+        margin-top: 0px;
+        letter-spacing: 0px;
+    }
+    .social{
+        font-size: 17px;
+    }
+    .addr{
+        font-size: 25px;
+    }
+    .email-wrap{
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+    .address{
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .white-line{
+        height: 3.5px;
+    }
+    .socials-wrap{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .circle{
+        top:30%;
+        left:-30%
+    }
+    .wrap{
+        padding: 0px;
+        /* padding-left: auto;
+        padding-right: 37px; */
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .hello{
+        margin-top: 0;
+        font-size: 50px;
+        letter-spacing: -4px;
+        margin-bottom: 5px;
+    }
+    .email{
+        font-size: 30px;
+        margin-top: 0px;
+        letter-spacing: 0px;
+    }
+    .social{
+        font-size: 18.5px;
+    }
+    .addr{
+        font-size: 25px;
+    }
+    .address{
+        margin-top: 30px;
+        margin-bottom: 47px;
+    }
+    .socials-wrap{
+        flex-direction: column;
+    }
+    .space{
+        display: none;
+    }
+    .one,.two{
+        justify-content:start;
+    }
+    .two{
+        margin-top: 20px;
+    }
+    #ig,#dri{
+        margin-right: 20px;
+    }
+    #twit{
+        margin-right: 50px;
+    }
+}
+
