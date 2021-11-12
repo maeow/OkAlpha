@@ -10,13 +10,23 @@ function show1(){
     if($(window).width()>=767){
     if(check1 == false){
         arrow[0].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[0].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[0].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[0].style.animation = "showmore3 0.5s forwards";
+        }
         line[1].style.display = 'none';
         check1 = true;
     }
     else{
         arrow[0].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[0].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[0].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[0].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[1].style.display = 'block'; }, 450);
         check1 = false;
     }
@@ -29,13 +39,23 @@ function show2(){
     if($(window).width()>=767){
     if(check2 == false){
         arrow[1].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[1].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[1].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[1].style.animation = "showmore3 0.5s forwards";
+        }
         check2 = true;
         line[2].style.display = 'none';
     }
     else{
         arrow[1].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[1].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[1].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[1].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[2].style.display = 'block'; }, 450);
         check2 = false;
     }
@@ -48,13 +68,23 @@ function show3(){
     if($(window).width()>=767){
     if(check3 == false){
         arrow[2].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[2].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[2].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[2].style.animation = "showmore3 0.5s forwards";
+        }
         line[3].style.display = 'none';
         check3 = true;
     }
     else{
         arrow[2].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[2].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[2].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[2].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[3].style.display = 'block'; }, 450);
         check3 = false;
     }
@@ -67,13 +97,23 @@ function show4(){
     if($(window).width()>=767){
     if(check4 == false){
         arrow[3].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[3].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[3].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[3].style.animation = "showmore3 0.5s forwards";
+        }
         line[4].style.display = 'none';
         check4 = true;
     }
     else{
         arrow[3].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[3].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[3].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[3].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[4].style.display = 'block'; }, 450);
         check4 = false;
     }
@@ -86,13 +126,23 @@ function show5(){
     if($(window).width()>=767){
     if(check5 == false){
         arrow[4].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[4].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[4].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[4].style.animation = "showmore3 0.5s forwards";
+        }
         line[5].style.display = 'none';
         check5 = true;
     }
     else{
         arrow[4].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[4].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[4].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[4].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[5].style.display = 'block'; }, 450);
         check5 = false;
     }
@@ -105,13 +155,23 @@ function show6(){
     if($(window).width()>=767){
     if(check6 == false){
         arrow[5].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[5].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[5].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[5].style.animation = "showmore3 0.5s forwards";
+        }
         line[6].style.display = 'none';
         check6 = true;
     }
     else{
         arrow[5].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[5].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[5].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[5].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[6].style.display = 'block'; }, 450);
         check6 = false;
     }
@@ -124,13 +184,23 @@ function show7(){
     if($(window).width()>=767){
     if(check7 == false){
         arrow[6].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[6].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[6].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[6].style.animation = "showmore3 0.5s forwards";
+        }
         line[7].style.display = 'none';
         check7 = true;
     }
     else{
         arrow[6].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[6].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[6].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[6].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[7].style.display = 'block'; }, 450);
         check7 = false;
     }
@@ -143,13 +213,23 @@ function show8(){
     if($(window).width()>=767){
     if(check8 == false){
         arrow[7].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[7].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[7].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[7].style.animation = "showmore3 0.5s forwards";
+        }
         line[8].style.display = 'none';
         check8 = true;
     }
     else{
         arrow[7].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[7].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[7].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[7].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[8].style.display = 'block'; }, 450);
         check8 = false;
     }
@@ -162,13 +242,23 @@ function show9(){
     if($(window).width()>=767){
     if(check9 == false){
         arrow[8].style.animation = "spin 0.12s forwards ease-in 0.1s";
-        show_box[8].style.animation = "showmore 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[8].style.animation = "showmore 0.5s forwards";
+        }
+        else{
+            show_box[8].style.animation = "showmore3 0.5s forwards";
+        }
         line[9].style.display = 'none';
         check9 = true;
     }
     else{
         arrow[8].style.animation = "spin2 0.12s forwards ease-in";
-        show_box[8].style.animation = "showmore2 0.5s forwards";
+        if($(window).width()<1680){
+            show_box[8].style.animation = "showmore2 0.5s forwards";
+        }
+        else{
+            show_box[8].style.animation = "showmore4 0.5s forwards";
+        }
         setTimeout(function(){line[9].style.display = 'block'; }, 450);
         check9 = false;
     }
