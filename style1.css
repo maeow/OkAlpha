@@ -816,6 +816,16 @@ display: none;
     .contact{
         margin-top: -50px;
     }
+    /* #first{
+        padding-left: 120px;
+        padding-right: 90px;
+    }
+    .col-3 div{
+        width: 110%;
+    }
+    .col-3{
+        margin-right: 0;
+    } */
     .pin{
         height: 237;
     }
@@ -824,6 +834,7 @@ display: none;
     }
     .piet{
         height: 490;
+        /* margin-left: 20px; */
     }
     .retro{
         height: 237;
@@ -833,9 +844,13 @@ display: none;
     }
     .movie{
         height: 490;
+        /* width: 625px; */
+        
     }
     .thermo{
         height: 237;
+        /* margin-left: 18px; */
+        
     }
     .retro-watch{
         height: 237;
@@ -854,6 +869,7 @@ display: none;
     }
     .viewmaster{
         height: 490;
+        /* margin-left: 20px; */
     }
     .vintage{
         height: 237;
@@ -866,59 +882,67 @@ display: none;
     }
     .pifco{
         height: 490;
+        margin-left: 20px;
     }
     .olympic{
         height: 490;
     }
 }
-@media only screen and (max-width:1679px){
+@media only screen and (max-width:1301px){
     #first{
-        padding-left: 85px;
-        padding-right: 85px;
+        padding-left: 90px;
+        padding-right: 90px;
     }
     .col-3 div{
-        width: 125%;
+        width: 120%;
     }
     .col-3{
         margin-right: 0px;
     }
+    .pin{
+        /* width: ; */
+    }
     .piet{
-        margin-left: 70px;
-
+        /* margin-left: 70px; */
+        margin-left: 30px;
+        /* width: 430px; */
     }
     .retro{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .gridlock{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .movie{
-        width: 600px;
+        /* width: 600px; */
+        /* width: 440px; */
     }
     .thermo{
         
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
     .noise{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .jug{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .viewmaster{
+        /* margin-left: 30px; */
         margin-left: 30px;
     }
     .vintage{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .kids{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     .pifco{
+        /* margin-left: 30px; */
         margin-left: 30px;
     }
     .olympic{
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
     
 }
