@@ -317,6 +317,14 @@ body{
 .nav-close{
     display: none;
 }
+@media screen and (min-width:2200px) {
+    .navbody{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1980px;
+    }
+}
 @media screen and (max-width:767px) {
     .nav-back{
         height: 90px;
