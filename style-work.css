@@ -180,7 +180,7 @@ video{
     float: left;
     transition: 0.2s;
     z-index: 100;
-    left: -0.5px;
+    left: 0.5px;
     top: 0px;
     position: relative;
 }
@@ -194,7 +194,7 @@ video{
     transform-origin: bottom left;
     transform: skewY(-45deg) translateY(-1px);
     transition: 0.2s;
-    z-index: 101;
+    z-index: 102;
     position: relative;
 }
 .buttonWlink:hover ~ .side-btn, .wrap-btn:hover .side-btn{
@@ -287,6 +287,10 @@ a, a:hover{
     margin-bottom: 40px;
 }
 @media screen and (min-width:1680px) {
+    .vdo{
+        left: 0;
+        height: 800px;
+    }
     .hello{
         margin-bottom: 40px;
     }
@@ -552,4 +556,16 @@ a, a:hover{
         height: 0px;
     }
 }
-
+@keyframes showmore3{
+    to{
+        height: 800px;
+    }
+}
+@keyframes showmore4{
+    from{
+        height: 800px;
+    }
+    to{
+        height: 0px;
+    }
+}
