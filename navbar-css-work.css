@@ -389,7 +389,7 @@ to{
 
 @keyframes sh2{
 to{
-    top: 5%;
+    top: 60px;
     height: 240px;
 }
 }
@@ -422,7 +422,7 @@ to{
 @keyframes sh4{
 from{
     height: 240px;
-    top: 5%;
+    top: 60px;
 }
 to{
     top: -5%;
