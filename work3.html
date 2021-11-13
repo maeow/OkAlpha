@@ -10,13 +10,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="navbar-css-work.css">
+    <link rel="stylesheet" href="navbar-css-contact.css">
     <link rel="stylesheet" href="style-work.css">
     <link rel=icon type=image/png href="picwork/5bd5f0255a6dba7040e273d8_favicon.png" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js%22%3E"></script>
     <style>
         body{
             margin: 0;
+        }
+        .navbar-show{
+            background-color: #ff1f25;
+        }
+        .bg2{
+            float: right;
+            width: 100%;
+            height: 128.7px;
+            left: 48.5vw;
+            position: relative;
+            background-image: linear-gradient(to bottom, #005cef 800px, #fff0 800px);
+            overflow-x: hidden;
+        }
+        @media screen and (max-width: 767px) {
+            .bg2{
+                height: 90px;
+            }
         }
     </style>
 </head>
@@ -33,9 +50,17 @@
 
     <!-- navbar -->
     <div></div>
+    <div class="nav-back " style="background-color: #ff1f25;">
+        <div class="background" style="height: 90px;width: 100%;">
+            <div class="container-fluid" style="height: 90px;">
+            <div class="bg2">
+            </div>
+            </div>
+        </div>
+    </div>
     <div class="navbody">
         <a class="navbar-brand" href="index.html"><img class="nav-logo"src="picwork/work-logo.svg" alt="" class="nav-logo"></a>
-        <button class="navbar-toggler" id="toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" onclick="pic()" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="toggler" type="button"  aria-controls="navbarNav" aria-expanded="false" onclick="pic();check()" aria-label="Toggle navigation">
             <img id="one" src="picwork/5b264796d7fb57b1f5f2264a_icon-menu-white.svg" width="28" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86d" alt="" class="nav-icon">
             <img id="two" src="picwork/5b264796388bb0aeb6196b41_icon-close-white.svg" data-w-id="b2f9f39b-9e6e-8e20-21eb-f0d9828fe86e" alt="" class="nav-icon-close">
         </button>
@@ -50,7 +75,6 @@
         </div>
 
         <hr id="line">
-        <div class="araiwa">
         <div class="navbar-show"id="navbarNav">
             <div class="navbar-nav">
                 <a id="three" class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -58,7 +82,6 @@
                 <a id="five" class="nav-item nav-link" href="#">Shop</a>
                 <a id="six" class="nav-item nav-link" href="#">Contact</a>
             </div>
-        </div>
         </div>
     </div>
     
