@@ -281,7 +281,7 @@ let shows = document.getElementById("navbar-nav");
             if ($(window).width() < 990) {
                       document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
                       document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
-                      show.style = "display : block;";
+                    //   show.style = "display : block;";
                     // setTimeout(function(){show.style.display = 'block'; }, 320);
                       setTimeout(function(){document.getElementById('three').style.display = 'block'; }, 200);
                       setTimeout(function(){document.getElementById('four').style.display = 'block'; }, 200);
@@ -331,28 +331,49 @@ let shows = document.getElementById("navbar-nav");
             }
         
         }
+        // let show = document.getElementById("navbarNav");
+        let shownav = document.querySelector('#navbarNav');
+        let i2 = false;
+
+        function check(){
+            if(i2==false){
+                i2 = true;
+            }
+            else{
+                i2 = false;
+            }
+        }
 
 function resize() {
+    if(i2){
+        if($(window).width() < 767){
+        shownav.style.animation = "none";
+        shownav.style.height = "280px";
+        shownav.style.top = "75px";
+    }
+    else if($(window).width() < 991){
+        shownav.style.animation = "none";
+        shownav.style.height = "620px";
+        shownav.style.top = "140px";
+    }
+    else{
+    }
+    }
     if ($(window).width() > 990) {
-        show.style = "display : none;";
+        // shownav.style = "display : none;";
+        shownav.style.height = "0";
+        shownav.style.animation = "none";
         $("button").attr("aria-expanded","false");
         document.getElementById('three').style.display = 'none';
         document.getElementById('four').style.display = 'none';
         document.getElementById('five').style.display = 'none';
         document.getElementById('six').style.display = 'none';
-        i= false;
-}
-if ($(window).width() < 990) {
-            document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
-            document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
-            show.style.animation = "sh3 0.5s forwards";
-            $("button").attr("aria-expanded","false");
-            setTimeout(function(){document.getElementById('three').style.display = 'none'; }, 40);
-            setTimeout(function(){document.getElementById('four').style.display = 'none'; }, 80);
-            setTimeout(function(){document.getElementById('five').style.display = 'none'; }, 160);
-            setTimeout(function(){document.getElementById('six').style.display = 'none'; }, 240);
-            i = true;
-         }
+        document.getElementById("one").style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+        document.getElementById("two").style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; transition:0.3s ease";
+        i2 = false;
+        i=true;
+    }
+    
          
     if ( $(window).width() < 767) {
         for( var i=0;i<show_box.length;i++){
