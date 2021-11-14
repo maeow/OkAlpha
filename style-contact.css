@@ -31,7 +31,7 @@ body{
     margin-top: 25px;
 }
 .wrap{
-
+    
     position: relative;
     width: 100%;
     padding: 60px;
@@ -54,15 +54,15 @@ a, a:hover{
     margin-top: 15px;
     letter-spacing: -2px;
 }
+.email-wrap{
+    margin-bottom: 95px;
+    position: relative;
+}
 .line-hidden{
     position: absolute;
     width: 0;
     left: 430px;
     transition: 0.5s;
-}
-.email-wrap{
-    margin-bottom: 95px;
-    position: relative;
 }
 .aemail:hover .line-hidden{
     width:860px;
@@ -151,6 +151,16 @@ a, a:hover{
     right: -100%
 }
 @media screen and (min-width:1680px) {
+    .line-hidden{
+        position: absolute;
+        width: 0;
+        left: 685px;
+        transition: 0.5s;
+    }
+    .aemail:hover .line-hidden{
+        width:1370px;
+        left: 0;
+    }
     .circle{
         top:55%;
         right: -95%
@@ -388,3 +398,4 @@ a, a:hover{
         margin-right: 50px;
     }
 }
+
