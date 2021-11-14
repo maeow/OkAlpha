@@ -780,6 +780,7 @@ function resize() {
 //contact
     $("a[href='#top']", "#wrap-arrow").click(function() {
         $("html, body").animate({ scrollTop: 0 }, 1500, "swing");
+        // alert("aiParn");
         return false;
 });
 
@@ -1078,9 +1079,9 @@ function test(mql){
                 let val = window.scrollY;
                 var revealpoint =-100;
                 if (revealtop01 < windowheight - revealpoint) {
-                    console.log("Hello 11");
+                    // console.log("Hello 11");
            
-                    reveals01[i].style.transform = "translatex("+(val/1000*(105)-400)+"%)";
+                    reveals01[i].style.transform = "translatex("+(val/1000*(105)-480)+"%)";
                 }
                 // console.log("val: "+val);
                 // console.log("revealtop01: "+revealtop01);
@@ -1102,7 +1103,7 @@ function test(mql){
                 var revealpoint =0;
                 let val = window.scrollY;
                 if (revealtop05 < windowheight - revealpoint) {
-                    console.log("Hello 55");
+                    // console.log("Hello 55");
                     yellow1.style.width = ((val/(100))*(12.5)-82) +'%';
                     yellow2.style.width = ((val/(100))*(13)-100) +'%';
                     yellow3.style.width = ((val/(100))*(14)-120) +'%';
@@ -1128,8 +1129,8 @@ function test(mql){
                 var revealtop01 = reveals01[i].getBoundingClientRect().top;
                 var revealpoint =-100;
                 if (revealtop01 < windowheight - revealpoint) {
-                    console.log("Hello 22");
-                    reveals01[i].style.transform = "translatex("+(val/1000*(105)-580)+"%)";
+                    // console.log("Hello 66");
+                    reveals01[i].style.transform = "translatex("+(val/1000*(105)-550)+"%)";
                 }
                 // console.log("valt: "+val);
                 // console.log("revealtop01: "+revealtop01);
@@ -1314,7 +1315,7 @@ function test(mql){
                 var revealtop01 = reveals01[i].getBoundingClientRect().top;
                 var revealpoint =-300;
                 if (revealtop01 < windowheight - revealpoint) {
-                    console.log("Hello 33");
+                    console.log("Hello 99");
                     reveals01[i].style.transform = "translatex("+(revealtop01/53*(-5)-20)+"%)";
                 }
                 console.log("windowheight: "+windowheight);
