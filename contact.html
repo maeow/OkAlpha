@@ -17,7 +17,7 @@
 <body>
     <!-- <div class="all"> -->
     <div class="bg">
-        <div class="circle">
+        <div class="circle" id="circle" style="scroll-behavior: smooth;transition: 0.1s; transform: translateX(10px) translateY(10px);">
         </div>
     </div>
 
@@ -218,6 +218,14 @@ let shows = document.getElementById("navbar-nav");
         }
 
         $(window).on("resize", resize);
+        $(window).scroll(function() {
+            if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                document.querySelector('#circle').style.transform = "translateX(-10px) translateY(-10px)"
+   }
+            else{
+                document.querySelector('#circle').style.transform = "translateX(10px) translateY(10px)"
+            }
+});
     </script>
 </body>
 </html>
