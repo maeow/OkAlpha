@@ -4,3 +4,7 @@
 - The website is developed using HTML, CSS, and JavaScript.
 
 website : [https://mockupwebsite-for-education-okalpha.netlify.app/](https://mockupwebsite-for-education-okalpha.netlify.app/)
+
+https://github.com/user-attachments/assets/4bb10811-f496-46a3-ba6c-377393dabc63
+
+
